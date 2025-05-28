@@ -1,0 +1,6594 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "48165e23-4ba1-496b-9ee8-af09d9969d0a")
+	(paper "A4")
+	(lib_symbols
+		(symbol "Amplifier_Operational_AKL:AD8605ARTZ"
+			(pin_names
+				(offset 0.2)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 1.27 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "AD8605ARTZ"
+				(at 1.27 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD_AKL:SOT-23-5"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.tme.eu/Document/404ff0ad9cf074cb689e4ec67e936442/AD8606ARZ.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "SOT-23-5 CMOS Precision RRIO Operational Amplifier, 65μV Offset, 4.5μV/°C Drift, 10MHz GBW, Alternate KiCAD Library"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "opamp operational amplifier cmos rrio rail-to-rail precision AD8605"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "AD8605ARTZ_0_1"
+				(polyline
+					(pts
+						(xy -5.08 5.08) (xy -5.08 -5.08) (xy 5.08 0) (xy -5.08 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "AD8605ARTZ_1_1"
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -1.27 -6.35 90)
+					(length 3.18)
+					(name "V-"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -1.27 6.35 270)
+					(length 3.18)
+					(name "V+"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Analog_ADC:ADS1220xPW"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -15.24 11.43 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "ADS1220xPW"
+				(at 6.35 11.43 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_SO:TSSOP-16_4.4x5mm_P0.65mm"
+				(at 6.35 13.97 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/ads1220.pdf"
+				(at -12.7 10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Low-power, quad-input, 24-bit analog to digital converter, integrated temperature sensor, SPI interface, TSSOP-16 package"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "adc spi"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*TSSOP*4.4x5mm*P0.65mm*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "ADS1220xPW_0_1"
+				(rectangle
+					(start -15.24 10.16)
+					(end 15.24 -10.16)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "ADS1220xPW_1_1"
+				(pin input line
+					(at 17.78 7.62 180)
+					(length 2.54)
+					(name "SCLK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -17.78 2.54 0)
+					(length 2.54)
+					(name "AIN1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -17.78 5.08 0)
+					(length 2.54)
+					(name "AIN0/REFP1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 2.54 12.7 270)
+					(length 2.54)
+					(name "AVDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 12.7 270)
+					(length 2.54)
+					(name "DVDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 -5.08 180)
+					(length 2.54)
+					(name "~{DRDY}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 2.54 180)
+					(length 2.54)
+					(name "DOUT/~{DRDY}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 17.78 5.08 180)
+					(length 2.54)
+					(name "DIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 17.78 0 180)
+					(length 2.54)
+					(name "~{CS}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 17.78 -7.62 180)
+					(length 2.54)
+					(name "CLK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -12.7 90)
+					(length 2.54)
+					(name "DGND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 2.54 -12.7 90)
+					(length 2.54)
+					(name "AVSS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -17.78 -5.08 0)
+					(length 2.54)
+					(name "AIN3/REFN1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -17.78 -2.54 0)
+					(length 2.54)
+					(name "AIN2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -17.78 -7.62 0)
+					(length 2.54)
+					(name "REFN0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -17.78 7.62 0)
+					(length 2.54)
+					(name "REFP0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Connector:TestPoint_2Pole"
+			(pin_names
+				(offset 0.762) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 1.524 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint_2Pole"
+				(at 0 -1.778 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "2-polar test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_2Pole_0_1"
+				(circle
+					(center -1.778 0)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.778 0)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:C"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:R"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "TYPE-C-31-M-12:TYPE-C-31-M-12"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at -12.7 13.462 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Value" "TYPE-C-31-M-12"
+				(at -12.7 -13.462 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "TYPE-C-31-M-12:HRO_TYPE-C-31-M-12"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MF" "HRO Electronics Co., Ltd."
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MAXIMUM_PACKAGE_HEIGHT" "3.26 mm"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Package" "Package"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Price" "None"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Check_prices" "https://www.snapeda.com/parts/TYPE-C-31-M-12/HRO+Electronics+Co.%252C+Ltd./view-part/?ref=eda"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "STANDARD" "Manufacturer Recommendations"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "PARTREV" "2020.12.08"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "SnapEDA_Link" "https://www.snapeda.com/parts/TYPE-C-31-M-12/HRO+Electronics+Co.%252C+Ltd./view-part/?ref=snap"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MP" "TYPE-C-31-M-12"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Description_1" "\nUSB Connectors 24 Receptacle 1 8.94*7.3mm RoHS\n"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "SNAPEDA_PN" "TYPE-C-31-M-12"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Availability" "Not in stock"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MANUFACTURER" "HRO Electronics Co., Ltd."
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(symbol "TYPE-C-31-M-12_0_0"
+				(rectangle
+					(start -12.7 -12.7)
+					(end 12.7 12.7)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin power_in line
+					(at 17.78 -10.16 180)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "A1_B12"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 17.78 10.16 180)
+					(length 5.08)
+					(name "VBUS"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "A4_B9"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -17.78 5.08 0)
+					(length 5.08)
+					(name "CC1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "A5"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -17.78 2.54 0)
+					(length 5.08)
+					(name "DP1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "A6"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -17.78 0 0)
+					(length 5.08)
+					(name "DN1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "A7"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -17.78 -2.54 0)
+					(length 5.08)
+					(name "SBU1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "A8"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 17.78 -10.16 180)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "B1_A12"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 17.78 10.16 180)
+					(length 5.08)
+					(name "VBUS"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "B4_A9"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 17.78 -2.54 180)
+					(length 5.08)
+					(name "CC2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "B5"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 17.78 0 180)
+					(length 5.08)
+					(name "DP2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "B6"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 17.78 2.54 180)
+					(length 5.08)
+					(name "DN2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "B7"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 17.78 5.08 180)
+					(length 5.08)
+					(name "SBU2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "B8"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 17.78 -7.62 180)
+					(length 5.08)
+					(name "SHIELD"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "S1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 17.78 -7.62 180)
+					(length 5.08)
+					(name "SHIELD"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "S2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 17.78 -7.62 180)
+					(length 5.08)
+					(name "SHIELD"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "S3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 17.78 -7.62 180)
+					(length 5.08)
+					(name "SHIELD"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "S4"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "power:+3.3V"
+			(power)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+3.3V"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+3.3V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+3.3V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0) hide
+					(name "+3.3V"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "power:+3.3VA"
+			(power)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+3.3VA"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+3.3VA\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+3.3VA_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+3.3VA_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0) hide
+					(name "+3.3VA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "power:GND"
+			(power)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0) hide
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(junction
+		(at 179.07 119.38)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "08a39242-306a-4eca-85bf-5905d7f576c8")
+	)
+	(junction
+		(at 180.975 104.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0ca307f8-af2d-426b-95a5-5ec9acd5934e")
+	)
+	(junction
+		(at 128.27 93.345)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0cf2781a-1782-4564-96c2-f3e0babd2765")
+	)
+	(junction
+		(at 113.03 98.425)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "188f6c96-863e-45b7-9bbb-9afd11d4088a")
+	)
+	(junction
+		(at 188.595 106.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2ddcf6a2-0031-421d-93f4-17c9251e2159")
+	)
+	(junction
+		(at 113.03 104.775)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "33a52638-ca77-499d-ab22-cc950d97482c")
+	)
+	(junction
+		(at 220.345 106.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3aedce75-3b1c-4fb7-964a-cb8ea9a3632f")
+	)
+	(junction
+		(at 103.505 120.65)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3c3f3adc-5bca-4942-819a-764fbc2153bb")
+	)
+	(junction
+		(at 183.515 106.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3e3dbfe2-467d-4506-99bc-ba72df20b9c1")
+	)
+	(junction
+		(at 103.505 117.475)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "46c2b337-0c5f-44a1-9260-43940ab986be")
+	)
+	(junction
+		(at 210.185 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4db4f3e8-cef3-4aae-a85a-8b00ac76241d")
+	)
+	(junction
+		(at 184.785 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "50d09461-fb69-440b-bde9-82b7629a43f5")
+	)
+	(junction
+		(at 186.055 104.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "67bdb898-4c5d-421e-bff5-e8aecd697f77")
+	)
+	(junction
+		(at 103.505 112.395)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7107b757-ae92-4241-98f0-d2d65bd521e6")
+	)
+	(junction
+		(at 138.43 93.345)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7aaac9ac-9ab0-442c-94ae-899a514a854f")
+	)
+	(junction
+		(at 179.07 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7ef9a80e-360f-4a68-b0a7-40bd3d2cd2db")
+	)
+	(junction
+		(at 186.055 64.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9d881b49-329d-4cc9-bae6-476eb6d002fb")
+	)
+	(junction
+		(at 220.345 104.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a22400b4-3ce8-4c28-be0f-5c582f2b6db4")
+	)
+	(junction
+		(at 188.595 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a63473ae-c348-4678-b8b1-14484c837bc1")
+	)
+	(junction
+		(at 139.7 114.935)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a8af2071-d398-4429-b4cf-d9dc4e958511")
+	)
+	(junction
+		(at 173.99 104.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d37107ab-56fe-4cf7-be48-55e9c0fbdef2")
+	)
+	(junction
+		(at 212.725 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e9075652-222a-4470-8b12-34a8fb53e1fb")
+	)
+	(junction
+		(at 180.975 64.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ef36ca89-87b9-4fb7-83dc-3bb72e812669")
+	)
+	(no_connect
+		(at 137.16 71.755)
+		(uuid "00221d5d-0c3c-4cf9-9781-cc083429503e")
+	)
+	(no_connect
+		(at 101.6 64.135)
+		(uuid "5b7793ac-fe1d-47a9-96fa-1ad997b30728")
+	)
+	(no_connect
+		(at 137.16 59.055)
+		(uuid "7751d1ea-52b3-4d9f-b3be-304ac9b2aacb")
+	)
+	(wire
+		(pts
+			(xy 113.03 98.425) (xy 113.03 104.775)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b422843-3875-4ac6-941d-72b3378bae9f")
+	)
+	(wire
+		(pts
+			(xy 220.345 104.14) (xy 220.345 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c66f9b5-0455-4716-9076-2feac9e4d6b7")
+	)
+	(wire
+		(pts
+			(xy 139.7 114.935) (xy 144.145 114.935)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10870f26-8e06-4145-a605-40d962e53b03")
+	)
+	(wire
+		(pts
+			(xy 184.785 127) (xy 197.485 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "134966cc-5b2e-470f-a4f8-88af1707e2a4")
+	)
+	(wire
+		(pts
+			(xy 210.185 72.39) (xy 210.185 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1633401a-191b-4e54-89bd-8ab5d0ca0b86")
+	)
+	(wire
+		(pts
+			(xy 113.03 104.775) (xy 114.3 104.775)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "173354bf-5820-4b2e-bb0e-94a54a5d10fb")
+	)
+	(wire
+		(pts
+			(xy 186.055 63.5) (xy 186.055 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ca35f32-f3cb-4bdb-a634-d6de0af1514c")
+	)
+	(wire
+		(pts
+			(xy 205.105 72.39) (xy 205.105 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "22df1a86-d071-460a-a46f-bc557b3fa33a")
+	)
+	(wire
+		(pts
+			(xy 113.03 97.155) (xy 113.03 98.425)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "236adc62-a5c4-4134-9e07-4ad382131c94")
+	)
+	(wire
+		(pts
+			(xy 145.415 69.215) (xy 137.16 69.215)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24653d0d-2097-45e3-8651-9bd020ccb5ce")
+	)
+	(wire
+		(pts
+			(xy 137.16 93.345) (xy 138.43 93.345)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24cd45d3-9cb6-4477-96d5-68384305e9ee")
+	)
+	(wire
+		(pts
+			(xy 103.505 117.475) (xy 103.505 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2618eba9-d006-45b6-be31-5ddb751121e4")
+	)
+	(wire
+		(pts
+			(xy 128.27 93.345) (xy 128.27 98.425)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2a590f28-07c4-42ae-9483-37809f701d23")
+	)
+	(wire
+		(pts
+			(xy 121.92 114.935) (xy 139.7 114.935)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3506050b-8d26-499b-98ad-2f992456e09c")
+	)
+	(wire
+		(pts
+			(xy 113.03 104.775) (xy 113.03 108.585)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "35d73f6f-5a88-4f76-8d6e-142f2fd431d3")
+	)
+	(wire
+		(pts
+			(xy 202.565 86.36) (xy 202.565 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "39388bd8-c139-4155-bf46-6a6feeec0613")
+	)
+	(wire
+		(pts
+			(xy 207.645 127) (xy 210.185 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e0ede29-6b14-4c74-8653-d12eca799ac6")
+	)
+	(wire
+		(pts
+			(xy 202.565 124.46) (xy 202.565 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ee056c7-aa93-4b3a-84c3-cf8f6c349271")
+	)
+	(wire
+		(pts
+			(xy 93.345 112.395) (xy 103.505 112.395)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4355e534-807b-4c71-b6ac-7e3d77bc5e14")
+	)
+	(wire
+		(pts
+			(xy 138.43 93.345) (xy 139.7 93.345)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "44b4f29e-7fe0-43ba-a461-a86abbee2fd0")
+	)
+	(wire
+		(pts
+			(xy 210.185 86.36) (xy 210.185 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "458c5648-a162-41bc-a149-0df96a56f10d")
+	)
+	(wire
+		(pts
+			(xy 212.725 124.46) (xy 212.725 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "482f010f-bf8d-4276-92ea-721738d11dce")
+	)
+	(wire
+		(pts
+			(xy 173.99 104.14) (xy 180.975 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f20d0b6-17a1-4285-8fc9-e8e19cf12543")
+	)
+	(wire
+		(pts
+			(xy 183.515 55.88) (xy 180.975 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "537f4a18-754a-4526-9c98-c7e3f929cfb3")
+	)
+	(wire
+		(pts
+			(xy 173.99 127) (xy 179.07 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5aa2032e-710d-47b6-9f3a-f73adce573fd")
+	)
+	(wire
+		(pts
+			(xy 188.595 106.68) (xy 192.405 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c60e00b-ec51-4a13-abf2-f9a4dd3f85c6")
+	)
+	(wire
+		(pts
+			(xy 183.515 114.3) (xy 188.595 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c693b44-cf11-44d9-a10a-192502300dcf")
+	)
+	(wire
+		(pts
+			(xy 93.345 66.675) (xy 101.6 66.675)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6026bfed-bd7f-4b40-971e-149b0641c66d")
+	)
+	(wire
+		(pts
+			(xy 210.185 124.46) (xy 210.185 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62aa3e38-f0da-4381-b49c-c5c5056d331e")
+	)
+	(wire
+		(pts
+			(xy 97.155 120.65) (xy 103.505 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "73ca370e-587d-44a9-b2d2-135d1c1c64fc")
+	)
+	(wire
+		(pts
+			(xy 179.07 127) (xy 184.785 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7530f1e2-5e34-4d87-aaf9-00c4947fb604")
+	)
+	(wire
+		(pts
+			(xy 183.515 106.68) (xy 188.595 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "75ad94db-9321-474a-8ab8-c5c832bde25a")
+	)
+	(wire
+		(pts
+			(xy 200.025 124.46) (xy 200.025 137.795)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7609a12f-9a00-483e-94f4-a1547c175396")
+	)
+	(wire
+		(pts
+			(xy 197.485 72.39) (xy 197.485 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "760d1175-e6f2-45e8-961a-bb159064d659")
+	)
+	(wire
+		(pts
+			(xy 128.27 90.805) (xy 128.27 93.345)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7647d608-3179-43eb-b42c-982877b35938")
+	)
+	(wire
+		(pts
+			(xy 114.3 98.425) (xy 113.03 98.425)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "77a2f61a-2d60-4a6f-a4e2-285388678028")
+	)
+	(wire
+		(pts
+			(xy 220.345 87.63) (xy 212.725 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7bc639cb-595e-442a-afc9-39d3126861ce")
+	)
+	(wire
+		(pts
+			(xy 180.975 104.14) (xy 186.055 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7cc9ed26-2ef1-486d-94a3-2cf23cac1843")
+	)
+	(wire
+		(pts
+			(xy 202.565 72.39) (xy 202.565 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7dd67775-8dd8-418b-a50e-064d45b5b593")
+	)
+	(wire
+		(pts
+			(xy 128.27 90.805) (xy 103.505 90.805)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f1d196d-7a39-47f9-bfe5-bc4009733028")
+	)
+	(wire
+		(pts
+			(xy 200.025 72.39) (xy 200.025 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "801dcb61-e6da-4d3e-9ec8-a8ca9245734a")
+	)
+	(wire
+		(pts
+			(xy 212.725 127) (xy 220.345 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "85772b96-4309-497c-8ce2-e403af625e4d")
+	)
+	(wire
+		(pts
+			(xy 173.99 104.14) (xy 173.99 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8893dd0c-94b8-48cf-afde-ac1945abe6cd")
+	)
+	(wire
+		(pts
+			(xy 220.345 127) (xy 220.345 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c742d2c-bf7b-4aeb-93f9-a9a3026824a8")
+	)
+	(wire
+		(pts
+			(xy 217.805 104.14) (xy 220.345 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91141c71-fa55-48f9-9f8e-2ea3214862ea")
+	)
+	(wire
+		(pts
+			(xy 210.185 127) (xy 212.725 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99df25b7-55bd-406c-a72c-b49f7dde57a2")
+	)
+	(wire
+		(pts
+			(xy 103.505 90.805) (xy 103.505 112.395)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9afc6fc8-3be1-4d4e-af4d-6829cc0bee3e")
+	)
+	(wire
+		(pts
+			(xy 103.505 120.65) (xy 103.505 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c678360-6961-4567-a6bc-38451565ed40")
+	)
+	(wire
+		(pts
+			(xy 173.99 104.14) (xy 173.99 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2bb586f-bf91-439a-af2a-53d76b3bf9c5")
+	)
+	(wire
+		(pts
+			(xy 217.805 106.68) (xy 220.345 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ac91e8df-5b02-4859-957b-ca8bc79c3b54")
+	)
+	(wire
+		(pts
+			(xy 103.505 112.395) (xy 106.68 112.395)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af28f63b-1ef4-40ea-bb06-90ff29564655")
+	)
+	(wire
+		(pts
+			(xy 186.055 104.14) (xy 192.405 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b386d2af-cae2-478e-86f9-0f86aab12e00")
+	)
+	(wire
+		(pts
+			(xy 220.345 106.68) (xy 220.345 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b6b0911d-db82-4163-b84e-b0db067a373f")
+	)
+	(wire
+		(pts
+			(xy 197.485 127) (xy 197.485 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b6eb0a86-8089-4587-9fdc-2f9d1826cc67")
+	)
+	(wire
+		(pts
+			(xy 205.105 86.36) (xy 205.105 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b7bf3540-afe7-4b88-954d-7506fdcf4d38")
+	)
+	(wire
+		(pts
+			(xy 137.16 98.425) (xy 138.43 98.425)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba7fea4a-80a0-438e-ac64-9f0a0f81777a")
+	)
+	(wire
+		(pts
+			(xy 212.725 87.63) (xy 212.725 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2d7f093-4c38-4506-a1f1-4669b93d9342")
+	)
+	(wire
+		(pts
+			(xy 99.695 117.475) (xy 103.505 117.475)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2f01272-3cbf-4938-b8b7-1b9b73e64acc")
+	)
+	(wire
+		(pts
+			(xy 97.155 120.65) (xy 97.155 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c84737ca-a4cd-4c1f-aa29-bbdd905a2feb")
+	)
+	(wire
+		(pts
+			(xy 197.485 86.36) (xy 197.485 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc0a050e-19b7-4176-bfdf-a0d7ad9e1feb")
+	)
+	(wire
+		(pts
+			(xy 182.88 106.68) (xy 183.515 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d62708ba-aee2-4065-a732-1f9a085e523e")
+	)
+	(wire
+		(pts
+			(xy 128.27 143.51) (xy 125.095 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d6301bac-402f-4dba-966d-8f37b532d405")
+	)
+	(wire
+		(pts
+			(xy 139.7 93.345) (xy 139.7 114.935)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd731968-7061-48c4-99cb-46c6ffe01ca2")
+	)
+	(wire
+		(pts
+			(xy 180.975 55.88) (xy 180.975 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e435ab8c-8d72-4e90-903f-7c20545b061f")
+	)
+	(wire
+		(pts
+			(xy 129.54 93.345) (xy 128.27 93.345)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb0872b7-5656-4ca2-b67e-4e3b429fc6f1")
+	)
+	(wire
+		(pts
+			(xy 103.505 117.475) (xy 106.68 117.475)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed2f3896-f3d9-4bde-95f4-1df2a28ae998")
+	)
+	(wire
+		(pts
+			(xy 179.07 119.38) (xy 184.785 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "edd1fbbc-018b-45cc-93e2-d04d5ad90be9")
+	)
+	(wire
+		(pts
+			(xy 200.025 86.36) (xy 200.025 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef14afe8-b282-47a3-9559-4680a234659d")
+	)
+	(wire
+		(pts
+			(xy 128.27 98.425) (xy 129.54 98.425)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f26565e6-8e6e-40b3-8557-ac1617a6b147")
+	)
+	(wire
+		(pts
+			(xy 138.43 93.345) (xy 138.43 98.425)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4891609-eea1-4da5-ad67-0585c52407a9")
+	)
+	(wire
+		(pts
+			(xy 180.975 64.77) (xy 186.055 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc1fe302-5943-4977-841c-edb5c1cdc2bb")
+	)
+	(wire
+		(pts
+			(xy 207.645 124.46) (xy 207.645 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd8e6af4-d44b-4afd-b3d9-26129050305b")
+	)
+	(rectangle
+		(start 170.815 48.26)
+		(end 227.965 148.59)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 054f79e6-113e-4886-9d78-e03e522dfcf9)
+	)
+	(rectangle
+		(start 69.215 135.89)
+		(end 169.545 148.59)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 122a5569-4de5-495e-b416-162d8aa5c5b0)
+	)
+	(rectangle
+		(start 69.215 85.09)
+		(end 169.545 134.62)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid a6e210fa-cf63-4505-bc63-fe7fc8b16b52)
+	)
+	(rectangle
+		(start 172.085 53.34)
+		(end 194.945 80.01)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid a6e90cef-cfe7-498d-8a80-2ac4f7e9fbdf)
+	)
+	(rectangle
+		(start 69.215 48.26)
+		(end 169.545 83.82)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid ce5a6b6e-9714-45a7-90bb-f38c9359e312)
+	)
+	(text "0R for disconnecting parts of the circuit."
+		(exclude_from_sim no)
+		(at 200.025 140.97 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "20d7ec93-23ec-4906-ab82-b2380d4a5686")
+	)
+	(text "Pull-Up Circuit für CS"
+		(exclude_from_sim no)
+		(at 172.085 80.01 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3105f738-60fa-41be-ab12-986145b0d427")
+	)
+	(text "CHARGE AMPLIFIER"
+		(exclude_from_sim no)
+		(at 70.612 88.773 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "433fd256-4ccd-4e06-bf9b-331a0bbcdbec")
+	)
+	(text "ADS1220\nDatasheet\n9.1.1 + 9.2.1"
+		(exclude_from_sim no)
+		(at 212.725 86.36 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "642a7293-b64b-475f-a521-e68537c9da87")
+	)
+	(text "ADC"
+		(exclude_from_sim no)
+		(at 172.085 52.07 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "a2885c3a-9304-4e6c-bf11-8d7c0522b0bc")
+	)
+	(text "Local Ferro TEST POINTS"
+		(exclude_from_sim no)
+		(at 71.12 139.7 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "b5a5eae4-e31a-4534-a056-39a263afc484")
+	)
+	(text "FERRO CONNECTOR"
+		(exclude_from_sim no)
+		(at 70.485 52.07 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "bb8b058b-04a6-4955-aeae-6dcd5c16ae68")
+	)
+	(label "Vout"
+		(at 128.27 143.51 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1719c1d9-0dcd-47fb-b816-d59690fa850c")
+	)
+	(label "Ferro"
+		(at 145.415 69.215 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5aed1006-5171-4df8-8d72-c59c925cfcf5")
+	)
+	(label "Ferro"
+		(at 93.345 66.675 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5b36e8c3-5f22-4383-8bf8-874f5a28ffcc")
+	)
+	(label "Vout"
+		(at 144.145 114.935 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b3a6b71d-d93a-42f1-bec5-1354eb0b46ed")
+	)
+	(label "Vout"
+		(at 200.025 137.795 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cc5c6329-6aaf-4490-8b7b-26c7cf3363c7")
+	)
+	(label "Ferro"
+		(at 93.345 112.395 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d80ff3c3-1d54-49f5-995b-9a257f51e38c")
+	)
+	(global_label "VRef"
+		(shape input)
+		(at 137.16 66.675 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "04a32735-c6a6-414b-b40d-00a762c1e483")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 144.2387 66.675 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Shield"
+		(shape input)
+		(at 137.16 64.135 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "08040d7c-bc08-4e9b-a3d7-9277370f8e79")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 146.0113 64.135 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SCK"
+		(shape input)
+		(at 197.485 72.39 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0e2d1e97-9261-4a12-9f66-427f6d112319")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 197.485 65.7347 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "VRef"
+		(shape input)
+		(at 202.565 127 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "21b98d8a-f984-46df-a6c9-dac4c0dfd992")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 202.565 134.1581 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "MISO"
+		(shape input)
+		(at 202.565 72.39 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2290ac97-8f64-4338-8a3c-1b83fbb7efdb")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 202.565 64.888 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Shield"
+		(shape input)
+		(at 101.6 71.755 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3c7bedf1-441d-4ff7-b28a-a946ae828561")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 92.7487 71.755 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Shield"
+		(shape input)
+		(at 137.16 76.835 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7437cefd-b76c-43b5-befd-b456dad75ea0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 146.0113 76.835 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "VRef"
+		(shape input)
+		(at 101.6 69.215 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "866dc4ec-6628-434e-b0a7-25eee9b0b9a8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 94.4419 69.215 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "MOSI"
+		(shape input)
+		(at 200.025 72.39 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8fdad9e4-8188-4ecd-9627-b10e7fc71d01")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 200.025 64.888 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Shield"
+		(shape input)
+		(at 137.16 79.375 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "97542b05-3b0a-433a-a145-c45560bb9ca4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 146.0113 79.375 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "VRef"
+		(shape input)
+		(at 99.695 117.475 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a7d29eaa-37e3-43c5-b1e7-02953349b0fa")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 92.6163 117.475 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(hierarchical_label "DRDY"
+		(shape input)
+		(at 210.185 72.39 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8f40c08e-4830-4e50-9fff-449638381457")
+	)
+	(hierarchical_label "CS"
+		(shape input)
+		(at 183.515 55.88 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a5581b56-f0e5-4c78-90a2-b0dacb1ab42b")
+	)
+	(hierarchical_label "CS"
+		(shape input)
+		(at 205.105 72.39 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ddc4f45e-6520-4a2e-bbc7-976c660c9ebe")
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 103.505 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0878cdea-3e7b-4e8f-b2e4-f92c28d5fdef")
+		(property "Reference" "C28"
+			(at 98.425 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10u"
+			(at 98.425 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 104.4702 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 103.505 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 103.505 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dfd99ff0-8703-4a14-a258-0478ae0faf35")
+		)
+		(pin "2"
+			(uuid "40204c25-2214-4734-b525-cb1b0255ab91")
+		)
+		(instances
+			(project "Platine 4 Kanal Ferroelektret"
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
+					(reference "C28")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/3f492c24-21ee-4fe0-8061-e5eed61293e3"
+					(reference "C52")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/93c1ba4a-078f-425d-a9d0-8846ca701e4f"
+					(reference "C40")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/c49c7c29-bceb-4c48-9c88-3d6242a8cd29"
+					(reference "C64")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 182.88 106.68 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0e5172e0-607d-41cf-b390-777a553e031d")
+		(property "Reference" "#PWR050"
+			(at 186.69 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 174.625 106.68 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 182.88 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 182.88 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 182.88 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a96d7c75-3d83-4137-9dac-0aed86b0a229")
+		)
+		(instances
+			(project "Platine 4 Kanal Ferroelektret"
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
+					(reference "#PWR050")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/3f492c24-21ee-4fe0-8061-e5eed61293e3"
+					(reference "#PWR084")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/93c1ba4a-078f-425d-a9d0-8846ca701e4f"
+					(reference "#PWR067")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/c49c7c29-bceb-4c48-9c88-3d6242a8cd29"
+					(reference "#PWR0101")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 180.975 68.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "19fff3d1-9c53-407e-8695-31324345acac")
+		(property "Reference" "C17"
+			(at 174.625 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10u"
+			(at 174.625 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 181.9402 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 180.975 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 180.975 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3cfbe040-fe9e-473a-84b2-91828ab94fa7")
+		)
+		(pin "2"
+			(uuid "ab247cc1-a0f8-41a9-bf77-6cdf004ce757")
+		)
+		(instances
+			(project "Platine 4 Kanal Ferroelektret"
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
+					(reference "C17")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/3f492c24-21ee-4fe0-8061-e5eed61293e3"
+					(reference "C41")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/93c1ba4a-078f-425d-a9d0-8846ca701e4f"
+					(reference "C29")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/c49c7c29-bceb-4c48-9c88-3d6242a8cd29"
+					(reference "C53")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational_AKL:AD8605ARTZ")
+		(at 114.3 114.935 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3ad580b8-b514-4fab-9bd6-279489207764")
+		(property "Reference" "U4"
+			(at 120.65 116.205 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AD8605ARTZ"
+			(at 120.65 118.745 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD_AKL:SOT-23-5"
+			(at 114.3 114.935 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tme.eu/Document/404ff0ad9cf074cb689e4ec67e936442/AD8606ARZ.pdf"
+			(at 114.3 114.935 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 114.3 114.935 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c5643895-d5c6-4a9b-9225-7f79fed8e2ed")
+		)
+		(pin "2"
+			(uuid "e663fa2a-f74a-47ea-837a-f9d33dbfe323")
+		)
+		(pin "3"
+			(uuid "45e0df0e-f880-455d-afdd-2b414730f569")
+		)
+		(pin "4"
+			(uuid "e9c0e586-874c-479c-a1f7-21ba03d8efd0")
+		)
+		(pin "5"
+			(uuid "7e128190-ec73-401d-b0db-261a62fc04e2")
+		)
+		(instances
+			(project "Platine 4 Kanal Ferroelektret"
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
+					(reference "U4")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/3f492c24-21ee-4fe0-8061-e5eed61293e3"
+					(reference "U8")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/93c1ba4a-078f-425d-a9d0-8846ca701e4f"
+					(reference "U6")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/c49c7c29-bceb-4c48-9c88-3d6242a8cd29"
+					(reference "U10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 188.595 114.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3c1639c0-8e23-4c0d-949a-a079ee4e447d")
+		(property "Reference" "#PWR052"
+			(at 188.595 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 188.595 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 188.595 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 188.595 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 188.595 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1dfb3c58-7996-4040-bff4-673f7d3e4a12")
+		)
+		(instances
+			(project "Platine 4 Kanal Ferroelektret"
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
+					(reference "#PWR052")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/3f492c24-21ee-4fe0-8061-e5eed61293e3"
+					(reference "#PWR086")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/93c1ba4a-078f-425d-a9d0-8846ca701e4f"
+					(reference "#PWR069")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/c49c7c29-bceb-4c48-9c88-3d6242a8cd29"
+					(reference "#PWR0103")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3VA")
+		(at 173.99 96.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3c426b5d-7623-4834-a746-ccf8069b9ac4")
+		(property "Reference" "#PWR044"
+			(at 173.99 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3VA"
+			(at 173.99 92.075 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 173.99 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 173.99 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 173.99 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3d6fb0e3-e1a5-49e1-920e-3d2cd54b583c")
+		)
+		(instances
+			(project "Platine 4 Kanal Ferroelektret"
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
+					(reference "#PWR044")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/3f492c24-21ee-4fe0-8061-e5eed61293e3"
+					(reference "#PWR078")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/93c1ba4a-078f-425d-a9d0-8846ca701e4f"
+					(reference "#PWR061")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/c49c7c29-bceb-4c48-9c88-3d6242a8cd29"
+					(reference "#PWR095")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "TYPE-C-31-M-12:TYPE-C-31-M-12")
+		(at 119.38 69.215 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "409ab87e-ca13-44e5-bb65-1382a3b5681b")
+		(property "Reference" "J7"
+			(at 119.38 51.435 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TYPE-C-31-M-12"
+			(at 119.38 53.975 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TYPE-C-31-M-12:HRO_TYPE-C-31-M-12"
+			(at 119.38 69.215 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 119.38 69.215 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 119.38 69.215 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "HRO Electronics Co., Ltd."
+			(at 119.38 69.215 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" "3.26 mm"
+			(at 119.38 69.215 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Package" "Package"
+			(at 119.38 69.215 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Price" "None"
+			(at 119.38 69.215 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/TYPE-C-31-M-12/HRO+Electronics+Co.%252C+Ltd./view-part/?ref=eda"
+			(at 119.38 69.215 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" "Manufacturer Recommendations"
+			(at 119.38 69.215 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" "2020.12.08"
+			(at 119.38 69.215 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/TYPE-C-31-M-12/HRO+Electronics+Co.%252C+Ltd./view-part/?ref=snap"
+			(at 119.38 69.215 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MP" "TYPE-C-31-M-12"
+			(at 119.38 69.215 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "\nUSB Connectors 24 Receptacle 1 8.94*7.3mm RoHS\n"
+			(at 119.38 69.215 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "SNAPEDA_PN" "TYPE-C-31-M-12"
+			(at 119.38 69.215 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Availability" "Not in stock"
+			(at 119.38 69.215 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" "HRO Electronics Co., Ltd."
+			(at 119.38 69.215 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(pin "A6"
+			(uuid "7f5cc2cf-dc89-474f-81c1-39ac22297ec8")
+		)
+		(pin "B7"
+			(uuid "a98221ea-7060-4827-af34-81a9d7207ac1")
+		)
+		(pin "B1_A12"
+			(uuid "8e06e562-fdf8-4151-83d6-15240f2d2b38")
+		)
+		(pin "A4_B9"
+			(uuid "f1381aad-b1b4-4a4b-b6cb-30d9d2643bd6")
+		)
+		(pin "S1"
+			(uuid "71bda1e1-dac1-44e5-8ca9-a6ee0d852637")
+		)
+		(pin "S4"
+			(uuid "4da2866a-bcd4-460c-8622-6b4afb986e4b")
+		)
+		(pin "A8"
+			(uuid "cab380c7-1319-4582-b21c-4841b0b3e69d")
+		)
+		(pin "A7"
+			(uuid "36ce5629-5771-4c01-8416-4e0cd2c80915")
+		)
+		(pin "B4_A9"
+			(uuid "e531963c-3d60-43c6-b147-9089d2fcef69")
+		)
+		(pin "B8"
+			(uuid "a5089092-4e85-458b-81b4-7b2b1c88db7c")
+		)
+		(pin "S2"
+			(uuid "691b8931-6ea2-4ffc-927c-bf03b0e505ea")
+		)
+		(pin "A5"
+			(uuid "318c8225-605b-4d45-a653-e397f9e69618")
+		)
+		(pin "B5"
+			(uuid "6d6c9809-0712-45b5-973b-2d53f32c5f26")
+		)
+		(pin "A1_B12"
+			(uuid "1e4cf46d-0a49-4a95-b08b-ddbabe969f37")
+		)
+		(pin "S3"
+			(uuid "a7817ec8-48fe-41c2-a227-ecc40eaab1cf")
+		)
+		(pin "B6"
+			(uuid "7b290645-65bd-4753-86cb-c5b153ee6a13")
+		)
+		(instances
+			(project "Platine 4 Kanal Ferroelektret"
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
+					(reference "J7")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/3f492c24-21ee-4fe0-8061-e5eed61293e3"
+					(reference "J9")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/93c1ba4a-078f-425d-a9d0-8846ca701e4f"
+					(reference "J8")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/c49c7c29-bceb-4c48-9c88-3d6242a8cd29"
+					(reference "J10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3VA")
+		(at 113.03 97.155 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4c093d62-435f-4adf-a70d-6f71de4e1fd0")
+		(property "Reference" "#PWR047"
+			(at 113.03 100.965 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3VA"
+			(at 113.03 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 113.03 97.155 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 113.03 97.155 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 113.03 97.155 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "35a082bc-40de-4fee-94fa-4bb69c65f469")
+		)
+		(instances
+			(project "Platine 4 Kanal Ferroelektret"
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
+					(reference "#PWR047")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/3f492c24-21ee-4fe0-8061-e5eed61293e3"
+					(reference "#PWR081")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/93c1ba4a-078f-425d-a9d0-8846ca701e4f"
+					(reference "#PWR064")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/c49c7c29-bceb-4c48-9c88-3d6242a8cd29"
+					(reference "#PWR098")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 180.975 72.39 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "52263e05-242c-4929-ac20-7bcdb35afa63")
+		(property "Reference" "#PWR042"
+			(at 180.975 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 180.975 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 180.975 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 180.975 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 180.975 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "84e71bb4-4f56-42e3-ae74-95ef2f2ce2bc")
+		)
+		(instances
+			(project "Platine 4 Kanal Ferroelektret"
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
+					(reference "#PWR042")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/3f492c24-21ee-4fe0-8061-e5eed61293e3"
+					(reference "#PWR076")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/93c1ba4a-078f-425d-a9d0-8846ca701e4f"
+					(reference "#PWR059")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/c49c7c29-bceb-4c48-9c88-3d6242a8cd29"
+					(reference "#PWR093")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 186.055 100.33 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "58d04a09-f7ce-425f-ade8-c8f77a26e21c")
+		(property "Reference" "C21"
+			(at 188.595 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "100n"
+			(at 188.595 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 185.0898 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 186.055 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 186.055 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b8132ec3-77ac-44ea-a292-f28f1f606d9f")
+		)
+		(pin "2"
+			(uuid "92339b15-e0d4-4248-b7fe-18fd39931af5")
+		)
+		(instances
+			(project "Platine 4 Kanal Ferroelektret"
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
+					(reference "C21")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/3f492c24-21ee-4fe0-8061-e5eed61293e3"
+					(reference "C45")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/93c1ba4a-078f-425d-a9d0-8846ca701e4f"
+					(reference "C33")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/c49c7c29-bceb-4c48-9c88-3d6242a8cd29"
+					(reference "C57")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 121.92 104.775 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5d34552c-0407-42a3-86ae-ee13e0e703a2")
+		(property "Reference" "#PWR049"
+			(at 128.27 104.775 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 125.73 104.775 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 121.92 104.775 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 121.92 104.775 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 121.92 104.775 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7dc75c94-9685-477a-8825-fdc756eebe3d")
+		)
+		(instances
+			(project "Platine 4 Kanal Ferroelektret"
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
+					(reference "#PWR049")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/3f492c24-21ee-4fe0-8061-e5eed61293e3"
+					(reference "#PWR083")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/93c1ba4a-078f-425d-a9d0-8846ca701e4f"
+					(reference "#PWR066")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/c49c7c29-bceb-4c48-9c88-3d6242a8cd29"
+					(reference "#PWR0100")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 184.785 123.19 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6ccddd8a-cb90-461f-9bb8-d2138426b328")
+		(property "Reference" "C26"
+			(at 183.515 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "100n"
+			(at 184.785 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 185.7502 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 184.785 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 184.785 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bbe6367a-8831-435b-bde8-dd8bed762f2e")
+		)
+		(pin "2"
+			(uuid "84cbe23f-0927-44c8-9558-b698bcf18dce")
+		)
+		(instances
+			(project "Platine 4 Kanal Ferroelektret"
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
+					(reference "C26")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/3f492c24-21ee-4fe0-8061-e5eed61293e3"
+					(reference "C50")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/93c1ba4a-078f-425d-a9d0-8846ca701e4f"
+					(reference "C38")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/c49c7c29-bceb-4c48-9c88-3d6242a8cd29"
+					(reference "C62")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 197.485 82.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6d9626e2-2203-40a5-a70a-0f379e11ad94")
+		(property "Reference" "R13"
+			(at 194.945 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "47"
+			(at 194.945 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 195.707 82.55 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 197.485 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 197.485 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "142e33f5-64f5-432a-a44e-276205eb3998")
+		)
+		(pin "2"
+			(uuid "749a2d94-2e00-401c-8e21-c8ed90d25d68")
+		)
+		(instances
+			(project "Platine 4 Kanal Ferroelektret"
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
+					(reference "R13")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/3f492c24-21ee-4fe0-8061-e5eed61293e3"
+					(reference "R25")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/93c1ba4a-078f-425d-a9d0-8846ca701e4f"
+					(reference "R19")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/c49c7c29-bceb-4c48-9c88-3d6242a8cd29"
+					(reference "R31")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 183.515 110.49 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6f9174bc-f8ec-4198-ad22-289be922b2dd")
+		(property "Reference" "C23"
+			(at 184.785 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "100n"
+			(at 183.515 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 182.5498 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 183.515 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 183.515 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "eecb3445-da80-495b-947d-651ad8cd01bd")
+		)
+		(pin "2"
+			(uuid "ffcbc363-52aa-49e1-b301-598d0fd6646f")
+		)
+		(instances
+			(project "Platine 4 Kanal Ferroelektret"
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
+					(reference "C23")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/3f492c24-21ee-4fe0-8061-e5eed61293e3"
+					(reference "C47")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/93c1ba4a-078f-425d-a9d0-8846ca701e4f"
+					(reference "C35")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/c49c7c29-bceb-4c48-9c88-3d6242a8cd29"
+					(reference "C59")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 186.055 72.39 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "70c6a57e-f280-43d7-85bf-2ff922cb3bd2")
+		(property "Reference" "#PWR043"
+			(at 186.055 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 186.055 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 186.055 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 186.055 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 186.055 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1f455eea-7120-4456-91ec-eef3ea1f369c")
+		)
+		(instances
+			(project "Platine 4 Kanal Ferroelektret"
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
+					(reference "#PWR043")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/3f492c24-21ee-4fe0-8061-e5eed61293e3"
+					(reference "#PWR077")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/93c1ba4a-078f-425d-a9d0-8846ca701e4f"
+					(reference "#PWR060")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/c49c7c29-bceb-4c48-9c88-3d6242a8cd29"
+					(reference "#PWR094")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 186.055 68.58 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7102caea-c92f-4408-a995-46826534e70b")
+		(property "Reference" "C18"
+			(at 188.595 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "100n"
+			(at 188.595 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 185.0898 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 186.055 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 186.055 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "31d54b2e-fe61-4f08-ba95-0e32f9423ca1")
+		)
+		(pin "2"
+			(uuid "25ce7e57-8acb-4600-b944-19c374fd112a")
+		)
+		(instances
+			(project "Platine 4 Kanal Ferroelektret"
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
+					(reference "C18")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/3f492c24-21ee-4fe0-8061-e5eed61293e3"
+					(reference "C42")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/93c1ba4a-078f-425d-a9d0-8846ca701e4f"
+					(reference "C30")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/c49c7c29-bceb-4c48-9c88-3d6242a8cd29"
+					(reference "C54")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 186.055 96.52 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "752fc53d-5e8f-48cb-b616-d2c121d8149f")
+		(property "Reference" "#PWR046"
+			(at 186.055 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 186.055 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 186.055 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 186.055 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 186.055 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a9d6b663-90b3-4017-b52f-682c4b675364")
+		)
+		(instances
+			(project "Platine 4 Kanal Ferroelektret"
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
+					(reference "#PWR046")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/3f492c24-21ee-4fe0-8061-e5eed61293e3"
+					(reference "#PWR080")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/93c1ba4a-078f-425d-a9d0-8846ca701e4f"
+					(reference "#PWR063")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/c49c7c29-bceb-4c48-9c88-3d6242a8cd29"
+					(reference "#PWR097")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 133.35 98.425 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7843902a-ba44-44b8-baae-f229ee98d516")
+		(property "Reference" "CF1"
+			(at 133.35 102.235 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "360p"
+			(at 133.35 104.775 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 137.16 97.4598 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 133.35 98.425 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 133.35 98.425 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "086d2020-fc97-41d0-a813-dda37e127f25")
+		)
+		(pin "2"
+			(uuid "c1cfb2f4-06c9-4114-b509-f127cbcd7a99")
+		)
+		(instances
+			(project "Platine 4 Kanal Ferroelektret"
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
+					(reference "CF1")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/3f492c24-21ee-4fe0-8061-e5eed61293e3"
+					(reference "CF3")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/93c1ba4a-078f-425d-a9d0-8846ca701e4f"
+					(reference "CF2")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/c49c7c29-bceb-4c48-9c88-3d6242a8cd29"
+					(reference "CF4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 114.935 143.51 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "785437d7-5c1f-441a-806f-2eada69ad256")
+		(property "Reference" "#PWR057"
+			(at 108.585 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 111.125 143.51 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 114.935 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 114.935 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 114.935 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6405962e-fbed-439c-976f-0dff1f0fcbe2")
+		)
+		(instances
+			(project "Platine 4 Kanal Ferroelektret"
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
+					(reference "#PWR057")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/3f492c24-21ee-4fe0-8061-e5eed61293e3"
+					(reference "#PWR091")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/93c1ba4a-078f-425d-a9d0-8846ca701e4f"
+					(reference "#PWR074")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/c49c7c29-bceb-4c48-9c88-3d6242a8cd29"
+					(reference "#PWR0108")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 179.07 123.19 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "795f3875-d273-4110-bd99-f5089bbd04b4")
+		(property "Reference" "C25"
+			(at 177.8 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10u"
+			(at 177.8 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 178.1048 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 179.07 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 179.07 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a58ba611-28ef-44b2-b95e-c7c10550a02a")
+		)
+		(pin "2"
+			(uuid "addc7d7f-0376-41cd-bf94-ef6d01753f1f")
+		)
+		(instances
+			(project "Platine 4 Kanal Ferroelektret"
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
+					(reference "C25")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/3f492c24-21ee-4fe0-8061-e5eed61293e3"
+					(reference "C49")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/93c1ba4a-078f-425d-a9d0-8846ca701e4f"
+					(reference "C37")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/c49c7c29-bceb-4c48-9c88-3d6242a8cd29"
+					(reference "C61")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_2Pole")
+		(at 120.015 143.51 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "80bb714e-6da4-4252-806c-7479125342be")
+		(property "Reference" "TP6"
+			(at 119.38 145.415 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "TestPoint_2Pole"
+			(at 116.84 145.415 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_2Pads_Pitch2.54mm_Drill0.8mm"
+			(at 120.015 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 120.015 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 120.015 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "69cdfa7f-ac74-439b-8788-dded5507ecae")
+		)
+		(pin "2"
+			(uuid "009c1367-a8c0-471f-bf6b-222e4dd6b539")
+		)
+		(instances
+			(project "Platine 4 Kanal Ferroelektret"
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
+					(reference "TP6")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/3f492c24-21ee-4fe0-8061-e5eed61293e3"
+					(reference "TP8")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/93c1ba4a-078f-425d-a9d0-8846ca701e4f"
+					(reference "TP7")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/c49c7c29-bceb-4c48-9c88-3d6242a8cd29"
+					(reference "TP9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 118.11 104.775 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8292a100-ec61-46d4-a709-5ad254b28d81")
+		(property "Reference" "C22"
+			(at 114.935 103.505 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 121.92 107.315 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 121.92 103.8098 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 118.11 104.775 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 118.11 104.775 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f8e9f27f-04f3-4bf2-a474-0df501954173")
+		)
+		(pin "2"
+			(uuid "3b8ae4e5-3a7e-48a0-8543-71df5834d284")
+		)
+		(instances
+			(project "Platine 4 Kanal Ferroelektret"
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
+					(reference "C22")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/3f492c24-21ee-4fe0-8061-e5eed61293e3"
+					(reference "C46")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/93c1ba4a-078f-425d-a9d0-8846ca701e4f"
+					(reference "C34")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/c49c7c29-bceb-4c48-9c88-3d6242a8cd29"
+					(reference "C58")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 188.595 110.49 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "85b6768a-4687-4c3d-97c9-055742aa9783")
+		(property "Reference" "C24"
+			(at 189.865 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10u"
+			(at 189.865 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 189.5602 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 188.595 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 188.595 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6eebfe9f-79f3-421b-ba24-d7224909bb21")
+		)
+		(pin "2"
+			(uuid "04098001-615d-4ad8-a00f-3cbb9d01aa76")
+		)
+		(instances
+			(project "Platine 4 Kanal Ferroelektret"
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
+					(reference "C24")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/3f492c24-21ee-4fe0-8061-e5eed61293e3"
+					(reference "C48")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/93c1ba4a-078f-425d-a9d0-8846ca701e4f"
+					(reference "C36")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/c49c7c29-bceb-4c48-9c88-3d6242a8cd29"
+					(reference "C60")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 133.35 93.345 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8986f0f2-4d75-48b5-a5f5-2e057dd9b43a")
+		(property "Reference" "RF1"
+			(at 133.35 87.63 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "2G"
+			(at 133.35 90.17 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 133.35 95.123 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 133.35 93.345 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 133.35 93.345 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f16bcc93-7faf-4101-a92d-06948b82f4ba")
+		)
+		(pin "2"
+			(uuid "42edbebf-9af6-43cf-a349-e9bf833f189d")
+		)
+		(instances
+			(project "Platine 4 Kanal Ferroelektret"
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
+					(reference "RF1")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/3f492c24-21ee-4fe0-8061-e5eed61293e3"
+					(reference "RF3")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/93c1ba4a-078f-425d-a9d0-8846ca701e4f"
+					(reference "RF2")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/c49c7c29-bceb-4c48-9c88-3d6242a8cd29"
+					(reference "RF4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 180.975 100.33 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "999109fc-a35b-46c5-993b-791cdda5f335")
+		(property "Reference" "C20"
+			(at 174.625 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10u"
+			(at 174.625 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 181.9402 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 180.975 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 180.975 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e0061ae7-cdda-48d8-b593-5aeb2c452507")
+		)
+		(pin "2"
+			(uuid "decd9bca-900c-42e0-8d43-bcf8e7a9fc7d")
+		)
+		(instances
+			(project "Platine 4 Kanal Ferroelektret"
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
+					(reference "C20")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/3f492c24-21ee-4fe0-8061-e5eed61293e3"
+					(reference "C44")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/93c1ba4a-078f-425d-a9d0-8846ca701e4f"
+					(reference "C32")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/c49c7c29-bceb-4c48-9c88-3d6242a8cd29"
+					(reference "C56")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 202.565 82.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9a051263-9455-4f80-8e9c-038484309150")
+		(property "Reference" "R15"
+			(at 200.025 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "47"
+			(at 200.025 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 200.787 82.55 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 202.565 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 202.565 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5f125cfd-4529-4259-a52d-b5cf4297ba4f")
+		)
+		(pin "2"
+			(uuid "af90ba77-3b00-4817-937e-a09faae54dd8")
+		)
+		(instances
+			(project "Platine 4 Kanal Ferroelektret"
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
+					(reference "R15")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/3f492c24-21ee-4fe0-8061-e5eed61293e3"
+					(reference "R27")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/93c1ba4a-078f-425d-a9d0-8846ca701e4f"
+					(reference "R21")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/c49c7c29-bceb-4c48-9c88-3d6242a8cd29"
+					(reference "R33")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 97.155 130.81 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9dc675e5-c868-4433-9075-6dd35cb4bb0f")
+		(property "Reference" "#PWR055"
+			(at 97.155 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 97.155 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 97.155 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 97.155 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 97.155 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d3a701fb-af8f-4c98-a04f-cf77f2d0e1b9")
+		)
+		(instances
+			(project "Platine 4 Kanal Ferroelektret"
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
+					(reference "#PWR055")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/3f492c24-21ee-4fe0-8061-e5eed61293e3"
+					(reference "#PWR089")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/93c1ba4a-078f-425d-a9d0-8846ca701e4f"
+					(reference "#PWR072")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/c49c7c29-bceb-4c48-9c88-3d6242a8cd29"
+					(reference "#PWR0106")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 118.11 98.425 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b06f187a-8f07-4ba3-bb0b-edc93bd46fc7")
+		(property "Reference" "C19"
+			(at 113.03 97.155 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10u"
+			(at 119.38 100.965 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 114.3 99.3902 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 118.11 98.425 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 118.11 98.425 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "37b49fd3-955e-4f2d-aa8a-374707720c5b")
+		)
+		(pin "2"
+			(uuid "583be14e-d8d5-40aa-aa3d-826bd7a86ef7")
+		)
+		(instances
+			(project "Platine 4 Kanal Ferroelektret"
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
+					(reference "C19")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/3f492c24-21ee-4fe0-8061-e5eed61293e3"
+					(reference "C43")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/93c1ba4a-078f-425d-a9d0-8846ca701e4f"
+					(reference "C31")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/c49c7c29-bceb-4c48-9c88-3d6242a8cd29"
+					(reference "C55")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 186.055 63.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b4e013f9-7a5d-4468-940c-4b3b2b4cd390")
+		(property "Reference" "#PWR041"
+			(at 186.055 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 186.055 59.944 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 186.055 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 186.055 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 186.055 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0a3ce7b4-1580-4946-8027-637c48839219")
+		)
+		(instances
+			(project "Platine 4 Kanal Ferroelektret"
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
+					(reference "#PWR041")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/3f492c24-21ee-4fe0-8061-e5eed61293e3"
+					(reference "#PWR075")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/93c1ba4a-078f-425d-a9d0-8846ca701e4f"
+					(reference "#PWR058")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/c49c7c29-bceb-4c48-9c88-3d6242a8cd29"
+					(reference "#PWR092")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 205.105 82.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bb43e5a8-34c4-4661-ac5f-cd9344c22c94")
+		(property "Reference" "R16"
+			(at 202.565 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "47"
+			(at 202.565 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 203.327 82.55 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 205.105 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 205.105 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "793c1cb9-14d0-4563-8603-fa98110ec549")
+		)
+		(pin "2"
+			(uuid "fbf942ae-eca3-46c1-9e85-70e41e93a45e")
+		)
+		(instances
+			(project "Platine 4 Kanal Ferroelektret"
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
+					(reference "R16")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/3f492c24-21ee-4fe0-8061-e5eed61293e3"
+					(reference "R28")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/93c1ba4a-078f-425d-a9d0-8846ca701e4f"
+					(reference "R22")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/c49c7c29-bceb-4c48-9c88-3d6242a8cd29"
+					(reference "R34")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 220.345 106.68 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "be505909-d6c3-4497-b057-cf16c3fbc5f5")
+		(property "Reference" "#PWR051"
+			(at 226.695 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 221.615 109.22 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 220.345 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 220.345 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 220.345 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4a17f85e-c431-4789-968a-bba9860ac440")
+		)
+		(instances
+			(project "Platine 4 Kanal Ferroelektret"
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
+					(reference "#PWR051")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/3f492c24-21ee-4fe0-8061-e5eed61293e3"
+					(reference "#PWR085")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/93c1ba4a-078f-425d-a9d0-8846ca701e4f"
+					(reference "#PWR068")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/c49c7c29-bceb-4c48-9c88-3d6242a8cd29"
+					(reference "#PWR0102")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 200.025 82.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c821e1ae-31ce-4afa-8ebf-0161e032298d")
+		(property "Reference" "R14"
+			(at 197.485 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "47"
+			(at 197.485 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 198.247 82.55 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 200.025 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 200.025 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d099a1b1-fa56-4ce2-b0ca-ac81a9e98129")
+		)
+		(pin "2"
+			(uuid "6e8021a5-76e3-4d9f-9e59-664af046d5a0")
+		)
+		(instances
+			(project "Platine 4 Kanal Ferroelektret"
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
+					(reference "R14")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/3f492c24-21ee-4fe0-8061-e5eed61293e3"
+					(reference "R26")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/93c1ba4a-078f-425d-a9d0-8846ca701e4f"
+					(reference "R20")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/c49c7c29-bceb-4c48-9c88-3d6242a8cd29"
+					(reference "R32")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 180.975 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cd21cefc-5518-4797-baa7-586ba9e0180a")
+		(property "Reference" "R12"
+			(at 175.895 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1k"
+			(at 175.895 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 179.197 60.96 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 180.975 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 180.975 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5d790cd2-c380-445d-9e91-65e582c6cddc")
+		)
+		(pin "2"
+			(uuid "b1a9ef8a-f71f-4638-9f76-3e3e43ab4822")
+		)
+		(instances
+			(project "Platine 4 Kanal Ferroelektret"
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
+					(reference "R12")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/3f492c24-21ee-4fe0-8061-e5eed61293e3"
+					(reference "R24")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/93c1ba4a-078f-425d-a9d0-8846ca701e4f"
+					(reference "R18")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/c49c7c29-bceb-4c48-9c88-3d6242a8cd29"
+					(reference "R30")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 113.03 121.285 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d3e0efa9-a7f2-4b8d-a59d-bd0a15bb18a4")
+		(property "Reference" "#PWR054"
+			(at 113.03 127.635 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 113.03 126.365 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 113.03 121.285 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 113.03 121.285 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 113.03 121.285 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3ec9478b-555a-467c-bf10-1bce91e84757")
+		)
+		(instances
+			(project "Platine 4 Kanal Ferroelektret"
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
+					(reference "#PWR054")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/3f492c24-21ee-4fe0-8061-e5eed61293e3"
+					(reference "#PWR088")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/93c1ba4a-078f-425d-a9d0-8846ca701e4f"
+					(reference "#PWR071")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/c49c7c29-bceb-4c48-9c88-3d6242a8cd29"
+					(reference "#PWR0105")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 210.185 82.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d4e5a992-e6f5-410c-9d34-63948835a687")
+		(property "Reference" "R17"
+			(at 207.01 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "47"
+			(at 207.645 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 208.407 82.55 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 210.185 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 210.185 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f826294e-980a-4dfa-803f-742c8f011a08")
+		)
+		(pin "2"
+			(uuid "96b1cb91-3d28-410d-b137-f27f8987930c")
+		)
+		(instances
+			(project "Platine 4 Kanal Ferroelektret"
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
+					(reference "R17")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/3f492c24-21ee-4fe0-8061-e5eed61293e3"
+					(reference "R29")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/93c1ba4a-078f-425d-a9d0-8846ca701e4f"
+					(reference "R23")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/c49c7c29-bceb-4c48-9c88-3d6242a8cd29"
+					(reference "R35")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 179.07 119.38 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "db4cb5a9-8810-4dff-be7d-ca92b7482e1f")
+		(property "Reference" "#PWR053"
+			(at 179.07 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 179.07 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 179.07 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 179.07 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 179.07 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0383f53b-050d-479d-ad77-2eab46d457cb")
+		)
+		(instances
+			(project "Platine 4 Kanal Ferroelektret"
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
+					(reference "#PWR053")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/3f492c24-21ee-4fe0-8061-e5eed61293e3"
+					(reference "#PWR087")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/93c1ba4a-078f-425d-a9d0-8846ca701e4f"
+					(reference "#PWR070")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/c49c7c29-bceb-4c48-9c88-3d6242a8cd29"
+					(reference "#PWR0104")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 180.975 96.52 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e60d0369-5981-4add-8d3c-770b2a684775")
+		(property "Reference" "#PWR045"
+			(at 180.975 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 178.435 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 180.975 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 180.975 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 180.975 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "85661b3f-09f8-4e8c-82ef-2008bf845af9")
+		)
+		(instances
+			(project "Platine 4 Kanal Ferroelektret"
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
+					(reference "#PWR045")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/3f492c24-21ee-4fe0-8061-e5eed61293e3"
+					(reference "#PWR079")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/93c1ba4a-078f-425d-a9d0-8846ca701e4f"
+					(reference "#PWR062")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/c49c7c29-bceb-4c48-9c88-3d6242a8cd29"
+					(reference "#PWR096")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 121.92 98.425 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e7a7f007-bf9a-4563-954c-36e7884554d1")
+		(property "Reference" "#PWR048"
+			(at 128.27 98.425 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 125.73 98.425 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 121.92 98.425 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 121.92 98.425 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 121.92 98.425 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7b093342-428a-412c-bcd6-eb688033789f")
+		)
+		(instances
+			(project "Platine 4 Kanal Ferroelektret"
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
+					(reference "#PWR048")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/3f492c24-21ee-4fe0-8061-e5eed61293e3"
+					(reference "#PWR082")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/93c1ba4a-078f-425d-a9d0-8846ca701e4f"
+					(reference "#PWR065")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/c49c7c29-bceb-4c48-9c88-3d6242a8cd29"
+					(reference "#PWR099")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 103.505 130.81 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ec0641f4-c63e-4a42-8270-d40beea0edd8")
+		(property "Reference" "#PWR056"
+			(at 103.505 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 103.505 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 103.505 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 103.505 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 103.505 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7282a29b-90c0-44f6-946c-a5a4dc7f62f8")
+		)
+		(instances
+			(project "Platine 4 Kanal Ferroelektret"
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
+					(reference "#PWR056")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/3f492c24-21ee-4fe0-8061-e5eed61293e3"
+					(reference "#PWR090")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/93c1ba4a-078f-425d-a9d0-8846ca701e4f"
+					(reference "#PWR073")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/c49c7c29-bceb-4c48-9c88-3d6242a8cd29"
+					(reference "#PWR0107")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Analog_ADC:ADS1220xPW")
+		(at 205.105 106.68 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f393178c-21c4-4cd6-b152-9defd67d732b")
+		(property "Reference" "U3"
+			(at 216.535 108.585 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ADS1220xPW"
+			(at 216.535 116.205 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:TSSOP-16_4.4x5mm_P0.65mm"
+			(at 191.135 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/ads1220.pdf"
+			(at 194.945 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 205.105 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "80b9227e-03af-4c73-909c-f01b783d2fd1")
+		)
+		(pin "10"
+			(uuid "93c66c65-70a6-4d06-afea-291b4fcc9499")
+		)
+		(pin "11"
+			(uuid "1c211c24-a32c-4dce-bb80-957988a8ee96")
+		)
+		(pin "12"
+			(uuid "06384777-5ebb-4190-bd9b-9338859d1124")
+		)
+		(pin "13"
+			(uuid "7119aeee-06f2-4fd2-bd84-b9f95ea04ae1")
+		)
+		(pin "14"
+			(uuid "b22f38ab-16f5-4bdb-9050-1bb972438f10")
+		)
+		(pin "15"
+			(uuid "60a222e9-87e3-461a-981f-fa57d1c2187f")
+		)
+		(pin "16"
+			(uuid "abe998de-d5c5-4f1a-959e-3c947f7257bf")
+		)
+		(pin "2"
+			(uuid "ab1b146c-9fc9-47aa-b707-ed19192fbd9d")
+		)
+		(pin "3"
+			(uuid "9c86793b-c988-49d7-b22a-6c8b1553c74b")
+		)
+		(pin "4"
+			(uuid "175042b3-c5f2-426a-b919-68fb84200b80")
+		)
+		(pin "5"
+			(uuid "bb92f0d3-0dea-434d-ad17-cc191f5f52ef")
+		)
+		(pin "6"
+			(uuid "b2b305dd-471c-4dc5-855f-48dfe2699140")
+		)
+		(pin "7"
+			(uuid "0d002003-54b1-4612-bcb4-2039862e7fef")
+		)
+		(pin "8"
+			(uuid "94492fbd-c8dc-48d5-9841-b1ebedbbe96c")
+		)
+		(pin "9"
+			(uuid "116af715-a2c8-45f8-897a-b29943479dfb")
+		)
+		(instances
+			(project "Platine 4 Kanal Ferroelektret"
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
+					(reference "U3")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/3f492c24-21ee-4fe0-8061-e5eed61293e3"
+					(reference "U7")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/93c1ba4a-078f-425d-a9d0-8846ca701e4f"
+					(reference "U5")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/c49c7c29-bceb-4c48-9c88-3d6242a8cd29"
+					(reference "U9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 97.155 127 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f42c3807-d3b3-4296-80d7-b0613dd46b15")
+		(property "Reference" "C27"
+			(at 94.615 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 94.615 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 96.1898 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 97.155 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 97.155 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "943088cb-378e-49ed-98d2-fa67733c588e")
+		)
+		(pin "2"
+			(uuid "704fdfdf-9534-448c-9ef3-739d68eb0dac")
+		)
+		(instances
+			(project "Platine 4 Kanal Ferroelektret"
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
+					(reference "C27")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/3f492c24-21ee-4fe0-8061-e5eed61293e3"
+					(reference "C51")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/93c1ba4a-078f-425d-a9d0-8846ca701e4f"
+					(reference "C39")
+					(unit 1)
+				)
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/c49c7c29-bceb-4c48-9c88-3d6242a8cd29"
+					(reference "C63")
+					(unit 1)
+				)
+			)
+		)
+	)
+)

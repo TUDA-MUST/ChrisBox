@@ -1,0 +1,1351 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "42cb3c3a-bcd5-4b8f-b94a-032b16191734")
+	(paper "A4")
+	(lib_symbols
+		(symbol "Device:R"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 69.215 55.245) (xy 83.82 55.245)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "05d8e247-8e1a-4e70-81d2-aaa6bd1edb62")
+	)
+	(wire
+		(pts
+			(xy 123.825 55.245) (xy 138.43 55.245)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08a42a86-b155-4dcf-894f-9dedb1fe1d8c")
+	)
+	(wire
+		(pts
+			(xy 69.215 40.005) (xy 83.82 40.005)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f1899c8-a957-4278-925a-9f31c30aff46")
+	)
+	(wire
+		(pts
+			(xy 177.165 85.09) (xy 191.77 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a954d2c-1701-4040-80d5-ef7061c3222c")
+	)
+	(wire
+		(pts
+			(xy 123.19 40.005) (xy 137.795 40.005)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "299b5a2c-3563-4d75-b2d4-6cb0283dfeaf")
+	)
+	(wire
+		(pts
+			(xy 177.165 39.37) (xy 191.77 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "51e178f2-2a84-4805-9265-4b1a25bed643")
+	)
+	(wire
+		(pts
+			(xy 123.825 84.455) (xy 138.43 84.455)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "57c89df9-6b97-41e7-93bc-69b23bbeddba")
+	)
+	(wire
+		(pts
+			(xy 177.165 69.85) (xy 191.77 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "78804936-461e-432e-bc3d-0819cd66fa0f")
+	)
+	(wire
+		(pts
+			(xy 69.215 69.85) (xy 83.82 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9911335f-23fd-491a-8fb2-8efa9cdfb1b8")
+	)
+	(wire
+		(pts
+			(xy 177.165 54.61) (xy 191.77 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a893993b-3b98-4840-badb-8d9995a0dfd2")
+	)
+	(wire
+		(pts
+			(xy 123.825 69.85) (xy 138.43 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cdf562d2-03a1-4520-9fc1-8c29763cc68b")
+	)
+	(global_label "MISO"
+		(shape input)
+		(at 61.595 40.005 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0f67ffde-c3fd-4f5c-9e86-ec2c4ba8c9d8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 54.0136 40.005 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "DRDY 2"
+		(shape input)
+		(at 116.205 55.245 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3292f6f7-6b07-4bda-a382-917bb0a2af58")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 106.2235 55.245 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "DRDY 3"
+		(shape input)
+		(at 116.205 69.85 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "468badd5-5819-415d-951b-000a427c55dc")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 106.2235 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "CS 2"
+		(shape input)
+		(at 169.545 54.61 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5182a0c3-9217-4359-93e7-8dadf5b62ac6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 161.9032 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "MOSI"
+		(shape input)
+		(at 61.595 55.245 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5d903213-8914-45a7-8f61-fb9e017361fa")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 54.093 55.245 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "CS 1"
+		(shape input)
+		(at 169.545 39.37 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "62bf9999-bdf7-4b4f-a747-2b297eef2c36")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 161.9032 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SCK"
+		(shape input)
+		(at 61.595 69.85 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "731b847b-2a5b-46fa-aadf-dae6793d2cf5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 54.9397 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "CS 3"
+		(shape input)
+		(at 169.545 69.85 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7d8d842a-ef47-4969-a049-6a92b3e72a59")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 161.9032 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "CS 4"
+		(shape input)
+		(at 169.545 85.09 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c1b179c1-6fd5-446a-8e91-5660f4b9374b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 161.9032 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "DRDY 4"
+		(shape input)
+		(at 116.205 84.455 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "deb8fb66-de6c-4c7f-8f52-37e4ddbd37e3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 106.2235 84.455 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "DRDY 1"
+		(shape input)
+		(at 115.57 40.005 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "eca95056-6741-4b00-b0f4-974c5400f28b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 105.5885 40.005 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(hierarchical_label "ESP DRDY 2"
+		(shape input)
+		(at 138.43 55.245 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "021e1c5f-e6cf-4568-853f-88c97415a261")
+	)
+	(hierarchical_label "ESP CS 1"
+		(shape input)
+		(at 191.77 39.37 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0d041ace-ab96-45e4-ac8e-4e9515380ca2")
+	)
+	(hierarchical_label "ESP CS 2"
+		(shape input)
+		(at 191.77 54.61 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "39ffdc11-26d5-44e5-aa51-8f1bc186eaf4")
+	)
+	(hierarchical_label "ESP DRDY 1"
+		(shape input)
+		(at 137.795 40.005 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "73f43bf9-4f39-443b-891e-b09dfea4e031")
+	)
+	(hierarchical_label "ESP DRDY 3"
+		(shape input)
+		(at 138.43 69.85 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9230d793-5da7-459c-9330-eb0fe86e22a9")
+	)
+	(hierarchical_label "ESP SCK"
+		(shape input)
+		(at 83.82 69.85 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9ca9c623-d55a-4bbd-a6c3-962017ac4d6a")
+	)
+	(hierarchical_label "ESP MOSI"
+		(shape input)
+		(at 83.82 55.245 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9fc83097-25b9-4ab5-864e-0cfd9aef2c1b")
+	)
+	(hierarchical_label "ESP DRDY 4"
+		(shape input)
+		(at 138.43 84.455 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a441c8f4-7484-4d49-9a13-60dfa0a1cf04")
+	)
+	(hierarchical_label "ESP MISO"
+		(shape input)
+		(at 83.82 40.005 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "cebdbdcd-dfdd-41a0-98b9-357caa10f99c")
+	)
+	(hierarchical_label "ESP CS 3"
+		(shape input)
+		(at 191.77 69.85 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d50dbe22-dfd6-4da9-90d4-6165547fb3bc")
+	)
+	(hierarchical_label "ESP CS 4"
+		(shape input)
+		(at 191.77 85.09 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d8410a4a-b8e3-4483-abb2-efc45f83cb76")
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 120.015 69.85 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0713bb54-5f56-4ec9-b155-e18f141187b9")
+		(property "Reference" "R50"
+			(at 120.015 72.39 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0"
+			(at 118.745 74.295 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 120.015 71.628 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 120.015 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 120.015 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1d66c020-993e-48e0-9dc6-ff160c3e1b89")
+		)
+		(pin "2"
+			(uuid "e6724dc1-d072-456d-8587-2fc4e99677b9")
+		)
+		(instances
+			(project "Platine 4 Kanal Ferroelektret"
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/31155aea-a803-426b-a2ef-7efc74f02b76"
+					(reference "R50")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 65.405 55.245 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "10d507a5-a91c-481b-9953-b41f93476fa3")
+		(property "Reference" "R47"
+			(at 65.405 57.785 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0"
+			(at 64.135 59.69 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 65.405 57.023 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 65.405 55.245 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 65.405 55.245 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2e17af72-3c81-4686-800c-05620aff2b5f")
+		)
+		(pin "2"
+			(uuid "1677739a-3b0b-400a-9e8e-0f1f6b40377d")
+		)
+		(instances
+			(project "Platine 4 Kanal Ferroelektret"
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/31155aea-a803-426b-a2ef-7efc74f02b76"
+					(reference "R47")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 173.355 39.37 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "399c5c2f-66b6-4176-9896-cae5f7919828")
+		(property "Reference" "R43"
+			(at 173.355 41.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0"
+			(at 172.085 43.815 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 173.355 41.148 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 173.355 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 173.355 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4b62c13c-2aaf-4ce8-b544-df25d0226422")
+		)
+		(pin "2"
+			(uuid "927f1bb8-f2a9-457a-be1d-5348359828c6")
+		)
+		(instances
+			(project "Platine 4 Kanal Ferroelektret"
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/31155aea-a803-426b-a2ef-7efc74f02b76"
+					(reference "R43")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 65.405 69.85 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3e9d50a7-4926-446b-87b3-4f8040d0f303")
+		(property "Reference" "R49"
+			(at 65.405 72.39 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0"
+			(at 64.135 74.295 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 65.405 71.628 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 65.405 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 65.405 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7a71a310-dcf0-4403-bc97-6455e8164c22")
+		)
+		(pin "2"
+			(uuid "07235020-1af0-43ae-b37d-33bb1203ab9b")
+		)
+		(instances
+			(project "Platine 4 Kanal Ferroelektret"
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/31155aea-a803-426b-a2ef-7efc74f02b76"
+					(reference "R49")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 173.355 85.09 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "41b463be-efca-4be4-ba26-a48fcf26c379")
+		(property "Reference" "R53"
+			(at 173.355 87.63 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0"
+			(at 172.085 89.535 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 173.355 86.868 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 173.355 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 173.355 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fe5c8912-9985-4185-aeac-d6d62f6dc7e7")
+		)
+		(pin "2"
+			(uuid "dc88a3a5-c3d4-4560-affe-174ea71c5345")
+		)
+		(instances
+			(project "Platine 4 Kanal Ferroelektret"
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/31155aea-a803-426b-a2ef-7efc74f02b76"
+					(reference "R53")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 119.38 40.005 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "564f3209-8c1a-443b-99ef-223089bd3476")
+		(property "Reference" "R45"
+			(at 119.38 42.545 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0"
+			(at 118.11 44.45 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 119.38 41.783 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 119.38 40.005 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 119.38 40.005 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9e3ef55e-1b2e-4fff-92ae-cf5b01dcfceb")
+		)
+		(pin "2"
+			(uuid "c1565247-dae3-4c4f-afc1-7603e4d9c244")
+		)
+		(instances
+			(project "Platine 4 Kanal Ferroelektret"
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/31155aea-a803-426b-a2ef-7efc74f02b76"
+					(reference "R45")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 173.355 69.85 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5a994e2e-6587-459f-bd8f-db5ed31ebaab")
+		(property "Reference" "R51"
+			(at 173.355 72.39 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0"
+			(at 172.085 74.295 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 173.355 71.628 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 173.355 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 173.355 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "16c64c19-3d52-46b5-8b43-31f4604a1a90")
+		)
+		(pin "2"
+			(uuid "9860b848-444a-4bba-bde0-b48f866936c0")
+		)
+		(instances
+			(project "Platine 4 Kanal Ferroelektret"
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/31155aea-a803-426b-a2ef-7efc74f02b76"
+					(reference "R51")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 65.405 40.005 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6ae0e131-49f8-438d-ba87-bf360dce59cf")
+		(property "Reference" "R44"
+			(at 65.405 42.545 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0"
+			(at 64.135 44.45 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 65.405 41.783 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 65.405 40.005 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 65.405 40.005 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "93432b6c-26bf-4133-a8e7-4f80e0b1d07b")
+		)
+		(pin "2"
+			(uuid "06a89c63-4694-4a6e-add1-8e4f5b3e3ce8")
+		)
+		(instances
+			(project ""
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/31155aea-a803-426b-a2ef-7efc74f02b76"
+					(reference "R44")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 120.015 84.455 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7e9f05b4-3578-4305-b203-bc500e6f4f74")
+		(property "Reference" "R52"
+			(at 120.015 86.995 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0"
+			(at 118.745 88.9 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 120.015 86.233 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 120.015 84.455 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 120.015 84.455 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e61fb363-3b19-4748-bde4-8c2c94f749b2")
+		)
+		(pin "2"
+			(uuid "e329bbe4-d230-4ca4-ad09-35c98b8e3983")
+		)
+		(instances
+			(project "Platine 4 Kanal Ferroelektret"
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/31155aea-a803-426b-a2ef-7efc74f02b76"
+					(reference "R52")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 120.015 55.245 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a315c1cd-717a-48e0-8ec4-a097f966d352")
+		(property "Reference" "R48"
+			(at 120.015 57.785 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0"
+			(at 118.745 59.69 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 120.015 57.023 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 120.015 55.245 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 120.015 55.245 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1cd0d4cd-6f87-4d0d-a7ce-8b4a7344b0c6")
+		)
+		(pin "2"
+			(uuid "13a22cf7-2b57-4cf9-9b56-711abd42eebb")
+		)
+		(instances
+			(project "Platine 4 Kanal Ferroelektret"
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/31155aea-a803-426b-a2ef-7efc74f02b76"
+					(reference "R48")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 173.355 54.61 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b9ed9f7e-1e05-4da3-99ea-46f1d2300dbe")
+		(property "Reference" "R46"
+			(at 173.355 57.15 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0"
+			(at 172.085 59.055 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 173.355 56.388 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 173.355 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 173.355 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "52f5a068-3edc-46ad-8482-9e445778d6d9")
+		)
+		(pin "2"
+			(uuid "9ae0f6c7-4975-4ba7-a55b-3fd4bec38f05")
+		)
+		(instances
+			(project "Platine 4 Kanal Ferroelektret"
+				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/31155aea-a803-426b-a2ef-7efc74f02b76"
+					(reference "R46")
+					(unit 1)
+				)
+			)
+		)
+	)
+)
