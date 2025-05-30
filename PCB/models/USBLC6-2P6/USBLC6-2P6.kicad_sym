@@ -1,0 +1,247 @@
+
+(kicad_symbol_lib (version 20211014) (generator kicad_symbol_editor)
+  (symbol "USBLC6-2P6" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+    (property "Reference" "U" (id 0) (at -5.08483 7.62724 0)
+      (effects (font (size 1.27 1.27)) (justify bottom left))
+    )
+    (property "Value" "USBLC6-2P6" (id 1) (at -5.08127 -10.1625 0)
+      (effects (font (size 1.27 1.27)) (justify bottom left))
+    )
+    (property "Footprint" "USBLC6-2P6:SOT50P160X60-6N" (id 2) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "MF" "STMicroelectronics" (id 4) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Description" "\n17V Clamp 5A (8/20µs) Ipp Tvs Diode Surface Mount SOT-666\n" (id 5) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "PACKAGE" "SOT-666" (id 6) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Price" "None" (id 7) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Package" "SOT-563 STMicroelectronics" (id 8) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Check_prices" "https://www.snapeda.com/parts/USBLC62P6/STMicroelectronics/view-part/?ref=eda" (id 9) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "STANDARD" "IPC 7351B" (id 10) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "PARTREV" "5" (id 11) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "SnapEDA_Link" "https://www.snapeda.com/parts/USBLC62P6/STMicroelectronics/view-part/?ref=snap" (id 12) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "MP" "USBLC62P6" (id 13) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Purchase-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=1223192&manufacturer=STMicroelectronics&part_name=USBLC62P6&search_term=None" (id 14) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Availability" "In Stock" (id 15) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "MANUFACTURER" "ST MICROELECTRONICS" (id 16) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (symbol "USBLC6-2P6_0_0"
+      (polyline
+        (pts (xy -3.048 -1.778) (xy -3.048 0.0)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -3.048 0.0) (xy -3.048 2.032)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 3.302 2.032) (xy 3.302 -1.778)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 5.08 0.0) (xy 0.508 0.0)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 0.508 0.0) (xy -3.048 0.0)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 0.762 -0.762) (xy 0.508 -0.508)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy 0.508 -0.508) (xy 0.508 0.0)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy 0.508 0.0) (xy 0.508 0.508)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy 0.508 0.508) (xy 0.254 0.762)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts
+          (xy 0.508 0.0)
+          (xy -0.254 0.508)
+          (xy -0.254 -0.508)
+          (xy 0.508 0.0)
+        )
+        (stroke (width 0.1524)) (fill (type outline))
+      )
+      (polyline
+        (pts (xy -1.524 2.032) (xy -3.048 2.032)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -1.524 1.524) (xy -1.524 2.032)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -1.524 2.032) (xy -1.524 2.54)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts
+          (xy -1.524 2.032)
+          (xy -2.286 2.54)
+          (xy -2.286 1.524)
+          (xy -1.524 2.032)
+        )
+        (stroke (width 0.1524)) (fill (type outline))
+      )
+      (polyline
+        (pts (xy 3.302 2.032) (xy 2.54 2.032)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 2.54 2.032) (xy 0.0 2.032)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 0.0 2.032) (xy -1.524 2.032)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 2.54 1.524) (xy 2.54 2.032)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy 2.54 2.032) (xy 2.54 2.54)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts
+          (xy 2.54 2.032)
+          (xy 1.778 2.54)
+          (xy 1.778 1.524)
+          (xy 2.54 2.032)
+        )
+        (stroke (width 0.1524)) (fill (type outline))
+      )
+      (polyline
+        (pts (xy -1.524 -1.778) (xy -3.048 -1.778)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -1.524 -2.286) (xy -1.524 -1.778)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -1.524 -1.778) (xy -1.524 -1.27)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts
+          (xy -1.524 -1.778)
+          (xy -2.286 -1.27)
+          (xy -2.286 -2.286)
+          (xy -1.524 -1.778)
+        )
+        (stroke (width 0.1524)) (fill (type outline))
+      )
+      (polyline
+        (pts (xy 3.302 -1.778) (xy 2.54 -1.778)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 2.54 -1.778) (xy 0.0 -1.778)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 0.0 -1.778) (xy -1.524 -1.778)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 2.54 -2.286) (xy 2.54 -1.778)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy 2.54 -1.778) (xy 2.54 -1.27)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts
+          (xy 2.54 -1.778)
+          (xy 1.778 -1.27)
+          (xy 1.778 -2.286)
+          (xy 2.54 -1.778)
+        )
+        (stroke (width 0.1524)) (fill (type outline))
+      )
+      (polyline
+        (pts (xy -3.048 0.0) (xy -5.08 0.0)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -5.08 5.08) (xy 0.0 5.08)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 0.0 5.08) (xy 5.08 5.08)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 0.0 2.032) (xy 0.0 5.08)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -5.08 -5.08) (xy 0.0 -5.08)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 0.0 -5.08) (xy 5.08 -5.08)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 0.0 -1.778) (xy 0.0 -5.08)) (stroke (width 0.254))
+      )
+      (rectangle (start -5.08 -7.62) (end 5.08 7.62)
+        (stroke (width 0.254)) (fill (type background))
+      )
+      (pin bidirectional line (at -7.62 5.08 0) (length 2.54)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "1"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin power_in line (at -7.62 0.0 0) (length 2.54)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "2"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin bidirectional line (at -7.62 -5.08 0) (length 2.54)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "3"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin power_in line (at 7.62 0.0 180.0) (length 2.54)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "5"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin bidirectional line (at 7.62 5.08 180.0) (length 2.54)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "6"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin bidirectional line (at 7.62 -5.08 180.0) (length 2.54)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "4"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+    )
+  )
+)

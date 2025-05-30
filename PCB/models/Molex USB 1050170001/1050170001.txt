@@ -1,0 +1,10 @@
+﻿"Symbol";"Value";"Unit";
+"TraceParts.PartNumber";"90-09042024-035619";"";
+"REFERENCE";"1050170001";"";
+"TraceParts.PartTitle";"USB";"";
+"TraceParts.InstanceId";"90-09042024-0356192N3XX9WWY2MK673V115V3T3RA";"";
+"SUPPLIER";"Molex";"";
+"DESIGN";"Micro-USB B Receptacle, Bottom Mount, Surface Mount, with Solder Tabs, Lead-Free";"";
+"TRACEPARTS";"TRACEPARTS";"";
+"TraceParts.PartLanguage";"en";"";
+"TraceParts.PartVersion";"1.0.3";"";
