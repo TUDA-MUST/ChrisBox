@@ -292,7 +292,7 @@
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C16"
-			(at 0 -1.16 360)
+			(at 0 -1.16 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "1c422375-2aba-4a20-aeaa-a19fc984929c")
@@ -304,7 +304,7 @@
 			)
 		)
 		(property "Value" "10u"
-			(at 0 1.16 360)
+			(at 0 1.16 0)
 			(layer "F.Fab")
 			(uuid "26c827b6-d95a-4b25-8de9-0495df045f9a")
 			(effects
@@ -458,7 +458,7 @@
 			(uuid "3ffbb45b-9376-4186-bf93-6a8a15cd4c0a")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "a2e97e35-f5e2-4487-a0f1-bc511a077fca")
 			(effects
@@ -776,6 +776,18 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "05ff9de5-e12c-416a-b8dd-f5065177d8f4")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C473361"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "aab15f21-9911-4027-8a9e-e6bc654b52f9")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6307,7 +6319,7 @@
 		(path "/dfc85c1a-1b8f-421e-b70c-8a3ebae843c6")
 		(sheetname "Stammblatt")
 		(sheetfile "ChrisPCB.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 0.95)
@@ -12042,7 +12054,7 @@
 		(path "/6ebbc314-48ea-4783-a8c7-f9c6be61c9a7")
 		(sheetname "Stammblatt")
 		(sheetfile "ChrisPCB.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 0.95)
@@ -13124,7 +13136,7 @@
 		(path "/d08e0c36-738a-49ab-9528-106944bd69fe")
 		(sheetname "Stammblatt")
 		(sheetfile "ChrisPCB.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 0.95)
@@ -13177,7 +13189,7 @@
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C15"
-			(at 0 -1.16 360)
+			(at 0 -1.16 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "df659d42-8195-40fb-85b4-e76374bdd7a4")
@@ -13189,7 +13201,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 0 1.16 360)
+			(at 0 1.16 0)
 			(layer "F.Fab")
 			(uuid "74014f6d-f680-4440-91ac-d9a9562ed782")
 			(effects
@@ -13343,7 +13355,7 @@
 			(uuid "09cd62bc-be74-4bce-b1f1-a1328379a462")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "5ff29507-c496-4923-b900-b9bc0ff9621a")
 			(effects
@@ -17438,7 +17450,7 @@
 		(path "/2ec5f094-bb54-4a87-9e92-a4920c68de55")
 		(sheetname "Stammblatt")
 		(sheetfile "ChrisPCB.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 0.95)
@@ -24107,7 +24119,7 @@
 		(path "/6b4edcc6-91fa-4f8a-b42a-409c6b3685f0")
 		(sheetname "Stammblatt")
 		(sheetfile "ChrisPCB.kicad_sch")
-		(attr through_hole exclude_from_pos_files)
+		(attr through_hole exclude_from_pos_files exclude_from_bom)
 		(fp_line
 			(start -1.33 -1.33)
 			(end 0 -1.33)
@@ -24513,7 +24525,7 @@
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R4"
-			(at 0 -1.17 360)
+			(at 0 -1.17 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "2552e48b-9e9d-4391-b441-44ecf72111fe")
@@ -24525,7 +24537,7 @@
 			)
 		)
 		(property "Value" "470"
-			(at 0 1.17 360)
+			(at 0 1.17 0)
 			(layer "F.Fab")
 			(uuid "a8dda2fe-06ba-49e1-8e60-733657fd44b6")
 			(effects
@@ -24680,7 +24692,7 @@
 			(uuid "36abfb83-23e1-4df2-852a-eafee0cbb2f3")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "21020573-1f77-42ed-9043-535124b82a64")
 			(effects
@@ -29833,7 +29845,7 @@
 		(path "/ce6fe61e-00ea-4c35-86bf-fb5804358d15")
 		(sheetname "Stammblatt")
 		(sheetfile "ChrisPCB.kicad_sch")
-		(attr through_hole)
+		(attr through_hole exclude_from_pos_files exclude_from_bom)
 		(fp_line
 			(start -2.85 -2.75)
 			(end -2.85 -1.5)
@@ -30463,7 +30475,7 @@
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C79"
-			(at 0 -1.16 360)
+			(at 0 -1.16 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "d579a5ad-9208-418b-9fb1-a7dc6e363bf8")
@@ -30475,7 +30487,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 0 1.16 360)
+			(at 0 1.16 0)
 			(layer "F.Fab")
 			(uuid "50c1516b-37c1-481f-a4f2-cb61053b9a05")
 			(effects
@@ -30629,7 +30641,7 @@
 			(uuid "d3199df0-6acd-466b-8d23-885c7f3c872f")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "265156cc-c969-4ad5-bc2f-dd73139fe3b4")
 			(effects
@@ -33766,7 +33778,7 @@
 		(path "/5bb18583-2533-4832-a81e-390a99aaa91e")
 		(sheetname "Stammblatt")
 		(sheetfile "ChrisPCB.kicad_sch")
-		(attr through_hole exclude_from_pos_files)
+		(attr through_hole exclude_from_pos_files exclude_from_bom)
 		(fp_line
 			(start -1.33 -1.33)
 			(end 0 -1.33)
@@ -35363,7 +35375,7 @@
 		(path "/06c91e4d-43ae-44e8-bfcc-0a3d9b8730d1")
 		(sheetname "Stammblatt")
 		(sheetfile "ChrisPCB.kicad_sch")
-		(attr through_hole exclude_from_pos_files)
+		(attr through_hole exclude_from_pos_files exclude_from_bom)
 		(fp_line
 			(start -1.33 -1.33)
 			(end 0 -1.33)
@@ -37561,7 +37573,7 @@
 		(path "/e49737cf-749a-4434-8a53-b85c27d40a20")
 		(sheetname "Stammblatt")
 		(sheetfile "ChrisPCB.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 0.95)
@@ -37614,7 +37626,7 @@
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C81"
-			(at 0 -1.16 360)
+			(at 0 -1.16 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "38a14492-1187-4568-b164-095be1f04a8c")
@@ -37626,7 +37638,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 0 1.16 360)
+			(at 0 1.16 0)
 			(layer "F.Fab")
 			(uuid "36b579b7-971c-4574-9a41-c11e02f084e2")
 			(effects
@@ -37780,7 +37792,7 @@
 			(uuid "9602489a-4387-4028-b632-337697294346")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "2fe0a1b0-38ab-45a6-ba02-e0a14aac51d0")
 			(effects
@@ -43928,7 +43940,7 @@
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C80"
-			(at 0 -1.16 360)
+			(at 0 -1.16 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "193ecbf9-94a0-4abf-9c8f-3679dcb7fbae")
@@ -43940,7 +43952,7 @@
 			)
 		)
 		(property "Value" "10u"
-			(at 0 1.16 360)
+			(at 0 1.16 0)
 			(layer "F.Fab")
 			(uuid "3cab7901-6b90-4e7d-bacd-7ba54a18b110")
 			(effects
@@ -44094,7 +44106,7 @@
 			(uuid "3620c1ab-986a-4253-95e5-4c98fdbdf0b0")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "428adf51-d0c4-4d86-9452-ad886207d2b7")
 			(effects
