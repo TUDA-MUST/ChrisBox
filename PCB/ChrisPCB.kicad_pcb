@@ -29841,11 +29841,23 @@
 				)
 			)
 		)
+		(property "LCSC" "C144395"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "eb2a54d6-5b31-4428-804e-c67b679b62e4")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/ce6fe61e-00ea-4c35-86bf-fb5804358d15")
 		(sheetname "Stammblatt")
 		(sheetfile "ChrisPCB.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole)
 		(fp_line
 			(start -2.85 -2.75)
 			(end -2.85 -1.5)
