@@ -11,10 +11,14 @@
  - portable,
  - simple to use,
  - affordable.
+
 More details about ChrisBox are here to find: [About ChrisBox](#about-chrisbox).
 
  ## About this Repository
 
- In this repository are the PCB design of ChrisBox(/PCB), the CAD(/CAD) for the Box, where the PCB can be combined with an battery and a display, as well as general code(/CODE) for the PCB.
+ In this repository are the PCB design of ChrisBox, the CAD for the Box, where the PCB can be combined with an battery and a display, as well as general code for the PCB.
+ - [PCB](/PCB)
+ - [CAD](/CAD)
+ - [CODE](/CODE)
 
  ## About ChrisBox
