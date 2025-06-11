@@ -23,7 +23,7 @@ In this repository are the PCB design of ChrisBox, the CAD for the Box, where th
 
 Ordering and Building instructions are inclued here:
 - [ORDERING INSTRUCTIONS](/ORDERING_INSTRUCTIONS.md)
-- [BUILDING INSTRUCTIONS](/building-instructions.md)
+- [BUILDING INSTRUCTIONS](/BUILDING_INSTRUCTIONS.md)
 
 ## About ChrisBox
 
