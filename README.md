@@ -1,5 +1,5 @@
 # ChrisBox
-(**CH**arge **R**eading **I**nferface **S**ystem Box)
+(**CH**arge **R**eading **I**nferface **S**ystem Box)\
 4 Channel Charge Amplifier PCB
 
 ## Introduction
