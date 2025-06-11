@@ -28,7 +28,7 @@ Ordering and Building instructions are inclued here:
 - [BUILDING INSTRUCTIONS](/BUILDING_INSTRUCTIONS.md)
 
 Contributing to ChrisBox and this repository: [CONTRIBUTORS](#contributors).\
-License: [LICENSE](/LICENSE.md).
+License: [LICENSE](/LICENSE).
 
 ## About ChrisBox
 
