@@ -30,6 +30,8 @@ Ordering and Building instructions are inclued here:
 Contributing to ChrisBox and this repository: [CONTRIBUTORS](#contributors).\
 License: [LICENSE](/LICENSE).
 
+Information about citation is found here: [CITATION](#citation).
+
 ## About ChrisBox
 
 ### Development objective and target group
@@ -46,5 +48,29 @@ The main goals of development were:
 
 ### Detailed decription of ChrisBox
 
+Detailed description.
+- Shielding (cover, cable)
+- Analog electronics (charge amp, reference voltage)
+- digital electronics (ADC, microcontroller, display)
 
 ## Contributors
+
+ChrisBox was developed at the [Measurement and Sensor Technology Group](https://www.etit.tu-darmstadt.de/must/home_must/index.de.jsp) at TU Darmstadt by:
+- [Sven Suppelt]() (Supervision)
+- [Dominik Werner]() (Hardware and Software Design, CAD Design)
+- [Alexander Altmann]() (Supporting Ferroelectret Knowledge)
+- [Felix Herbst]() (Artwork)
+
+## Citation
+
+If you would like to reference the project, please cite the following (yet to publish...) [paper](https://www.etit.tu-darmstadt.de/must/home_must/index.de.jsp):
+
+```
+@inproceedings{name2025,
+  author={},
+  booktitle={}, 
+  title={}, 
+  year={2025},
+  pages={},
+  doi={}
+```
