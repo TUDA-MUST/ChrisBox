@@ -16,6 +16,8 @@ More details about ChrisBox are here to find: [About ChrisBox](#about-chrisbox).
 
 > *IMPORTANT NOTE:* This document describes the features and assembly of ChrisBox and does not contain information on how to build or use ferroelectret sensors.
 
+![Rendering of ChrisBox with display, battery and connected ferroelectret sensors.](/docs/ChrisBox_rendering.png)
+
 ## About this Repository
 
 In this repository are the PCB design of ChrisBox, the CAD for the Box, where the PCB can be combined with an battery and a display, as well as general code for the PCB.
