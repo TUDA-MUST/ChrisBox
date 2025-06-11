@@ -5,7 +5,7 @@
 ## Introduction
 
 Welcome to ChrisBox!\
-ChrisBox is a four channel charge amplifier, mainly developed for the simulatneous usage of four ferroelectret sensors.
+ChrisBox is a four channel charge amplifier, mainly developed for the simulatneous charge measurement of four ferroelectret sensors.
 The main goals of development were 
 - low noise (shielding concept),
 - portable,
@@ -13,6 +13,8 @@ The main goals of development were
 - affordable.
 
 More details about ChrisBox are here to find: [About ChrisBox](#about-chrisbox).
+
+> *IMPORTANT NOTE:* This document describes the features and assembly of ChrisBox and does not contain information on how to build or use ferroelectret sensors.
 
 ## About this Repository
 
@@ -24,6 +26,9 @@ In this repository are the PCB design of ChrisBox, the CAD for the Box, where th
 Ordering and Building instructions are inclued here:
 - [ORDERING INSTRUCTIONS](/ORDERING_INSTRUCTIONS.md)
 - [BUILDING INSTRUCTIONS](/BUILDING_INSTRUCTIONS.md)
+
+Contributing to ChrisBox and this repository: [CONTRIBUTORS](#contributors).\
+License: [LICENSE](/LICENSE).
 
 ## About ChrisBox
 
@@ -40,3 +45,6 @@ The main goals of development were:
 - **Affordable** is interesting in comparison to e.g. electrometers, because with this PCB more risky experiments (like electric shocks near the measurement setup) can be conducted with a relatively low financial risk (one assembled PCB costed around 40€-50€ (no guarantee for the price!)).
 
 ### Detailed decription of ChrisBox
+
+
+## Contributors
