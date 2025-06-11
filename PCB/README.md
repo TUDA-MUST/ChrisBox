@@ -13,6 +13,8 @@ The ChrisBox PCB is designed with KiCad. The Project files and generated Exports
 - `./jlcpcb` - Output data from the KiCAD JLCPCB tools. This data can be used for ordering a PCB with components. Always re-check the data yourself!
 - `./models` - Additional footprints and models, which are not included in KiCad and its plugins itself.
 
+The other files in this folder are the [main KiCad project](/PCB/ChrisPCB.kicad_pro) with schematic and pcb, as well as the sub-schematics (ferro_amplifier and usb_connector).
+
 ## Notes on KiCad settings
 
 The design was made with KiCad 8.0. Installed plugins are the Alternate KiCad Library (by Dawid Cislo), the Interactive Html Bom (by qu1ck) and the KiCAD JLCPCB tools (by Bouni).
