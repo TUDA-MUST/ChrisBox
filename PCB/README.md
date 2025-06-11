@@ -7,11 +7,11 @@ The ChrisBox PCB is designed with KiCad. The Project files and generated Exports
 
 ## Content of the PCB folder
 
+- `./data` - pictures of the PCB and some for the schematic and silkscreen
 - `./exports` - Siemens NX part files for the casing.
 - `./interactive bom` - Electric components of the assembly (PCB with most components, a standard Battery and the NX3224K024 display). 
 - `./jlcpcb` - STL data of the casing, e.g. for 3D printing
 - `./models` - pictures of the assembly
-- `./support_pictures` - pictures of the PCB and some for the schematic and silkscreen
 
 ## Details on KiCad settings
 
