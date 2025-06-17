@@ -100,6 +100,8 @@ Place the PCB into the bottom half of the casing, with screws and spacers.
 
 Then connect both halfs of the casing and tighten the screws. The ChrisBox is finished!
 
+> **Tip:** Place the top half on top of the lower half with the screws and spacers on a table. Then move the assembly to the edge of the table that one screw can be tightened. Repeat for the other screws.
+
 <p align="center">
       <img src="/data/ChrisBox_Assembly_4_screws.JPG" width="49%">
       <img src="/data/ChrisBox_Assembly_5_finished.JPG" width="49%">
