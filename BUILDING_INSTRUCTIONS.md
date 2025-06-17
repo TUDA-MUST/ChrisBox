@@ -15,7 +15,7 @@ This are the building instructions for a complete ChrisBox setup. A complete set
 ## Nextion Software
 
 The used Nextion display is a NX3224K024 display. The `.HMI` file with the code for the Nextion Editor is in the `./CODE` folder, as well a the `.tft` file. This `Chrisbox Nextion.tft` file can be flashed on a NX3224K024 display via micro SD card.
-Either you open the `.HMI` file in Nextion Editor and execute a TFT file output, or you just take the given `.tft` file:\
+Either you open the `.HMI` file in Nextion Editor and execute a TFT file output, or you just take the given `.tft` file:
 1. Save the `.tft` file to a fresh micro SD card.
 2. Insert this micro SD card into the Nextion display.
 3. turn on power for the display (by connection GND and 5V, either to the USB adapter or to the ChrisBox PCB.)
