@@ -57,17 +57,44 @@ Either you open the `.HMI` file in Nextion Editor and execute a TFT file output,
 6. Remove SD card.
 7. The update is complete. By turning power on again the loaded program should be active, without SD card!
 
-## Casing
+## Full ChrisBox Assembly
+
+The full ChrisBox assembly consists of:
+- ChrisBox PCB with shielding cover
+- Nextion NX3224K024 display
+- cable between PCB and display
+- 1x Casing Top (3D printing)
+- 1x Casing Bottom  (3D printing)
+- 4x Spacer (3D printing)
+- 4x M3x25 screw
+- 4x Threaded insert M3x3,0 (CAD made for: hole diameter 4mm, blind hole depth min. 4mm)
 
 ![ChrisBox Assembly parts overview](/data/ChrisBox_Assembly_1_overview.JPG)
 
-Cable + Shield!
-Cable: UART, JST XH or do something sketchy, RX to TX and otherwise round, GND to GND and 5V to 5V
+First, insert the threaded inserts into the top of the casing with a solder iron or threaded insert heat press.
 
-![ChrisBox Assembly connected cable](/data/ChrisBox_Assembly_2_cable.JPG)
+<p align="center">
+      <img src="/data/ChrisBox_Casing_2_inserts.JPG" width="49%">
+      <img src="/data/ChrisBox_Casing_3_inserted_inserts.JPG" width="49%">
+</p>
 
-![ChrisBox Assembly inserted display](/data/ChrisBox_Assembly_3_display.JPG)
+Then connect the Nextion display to the ChrisBox PCB. An ordered Nextion display contains a cable with on JST XH connector (the white 4x1 connector) and four Dupont connectors (the black 1x1 connectors).
+Connect the JST XH connector to the display. You can connect the Dupont cables on the ChrisBox PCB, or you can shorten the cables and add crimp connectins for another JST XH connector. This is what is used here on the picture. The JST XH connector fits directly onto the ChrisBox PCB.
+Anyway, connect GND to GND, 5V to 5V and RX to TX and the other way around.
+Place the shielding cover onto the shielding frame on the PCB.
 
-![ChrisBox Assembly screws](/data/ChrisBox_Assembly_4_screws.JPG)
+Place the display into the top half of the casing, with the connector in the direction of the bulge.
 
-![ChrisBox Assembly finished](/data/ChrisBox_Assembly_5_finished.JPG)
+<p align="center">
+      <img src="/data/ChrisBox_Assembly_2_cable.JPG" width="49%">
+      <img src="/data/ChrisBox_Assembly_3_display.JPG" width="49%">
+</p>
+
+Place the PCB into the bottom half of the casing, with screws and spacers.
+
+Then connect both halfs of the casing and tighten the screws. The ChrisBox is finished!
+
+<p align="center">
+      <img src="/data/ChrisBox_Assembly_4_screws.JPG" width="49%">
+      <img src="/data/ChrisBox_Assembly_5_finished.JPG" width="49%">
+</p>
