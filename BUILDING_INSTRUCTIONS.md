@@ -12,6 +12,10 @@ This are the building instructions for a complete ChrisBox setup. A complete set
 
 ## PCB Software
 
+![Arduino IDE select device](/data/ChrisBox_Software_1_select_device.JPG)
+
+![Arduino IDE upload options](/data/ChrisBox_Software_2_upload_options.JPG)
+
 ## Nextion Software
 
 The used Nextion display is a NX3224K024 display. The `.HMI` file with the code for the Nextion Editor is in the `./CODE` folder, as well a the `.tft` file. This `Chrisbox Nextion.tft` file can be flashed on a NX3224K024 display via micro SD card.
@@ -25,3 +29,16 @@ Either you open the `.HMI` file in Nextion Editor and execute a TFT file output,
 7. The update is complete. By turning power on again the loaded program should be active, without SD card!
 
 ## Casing
+
+![ChrisBox Assembly parts overview](/data/ChrisBox_Assembly_1_overview.JPG)
+
+Cable + Shield!
+Cable: UART, JST XH or do something sketchy, RX to TX and otherwise round, GND to GND and 5V to 5V
+
+![ChrisBox Assembly connected cable](/data/ChrisBox_Assembly_2_cable.JPG)
+
+![ChrisBox Assembly inserted display](/data/ChrisBox_Assembly_3_display.JPG)
+
+![ChrisBox Assembly screws](/data/ChrisBox_Assembly_4_screws.JPG)
+
+![ChrisBox Assembly finished](/data/ChrisBox_Assembly_5_finished.JPG)
