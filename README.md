@@ -25,7 +25,7 @@ In this repository are the PCB design of ChrisBox, the CAD for the Box, where th
 - [CAD](/CAD) -> housing for the circuit board and an additional display
 - [CODE](/CODE) -> code to be flashed on the microcontroller of the PCB, and code for a Nextion display.
 
-A code description is found in the './CODE' folder, if you just want to build a ChrisBox, the following instructions should be sufficient.
+A code description is found in the `./CODE` folder, if you just want to build a ChrisBox, the following instructions should be sufficient.
 
 Ordering and Building instructions are inclued here:
 - [ORDERING INSTRUCTIONS](/ORDERING_INSTRUCTIONS.md)
