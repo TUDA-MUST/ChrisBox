@@ -2,6 +2,12 @@
 
 This are the building instructions for a complete ChrisBox setup. A complete setup includes not only the main PCB and its software, but also a Nextion display and a casing. The display and casing are optional for functionality.
 
+1. [PCB Hardware](#PCB_Hardware)
+2. [PCB Software](#PCB_Software)
+3. [Nextion Software](#Nextion_Software)
+4. [Full ChrisBox Assembly](#Full_ChrisBox_assembly)
+
+
 ## PCB Hardware
 
 When ordering a populated circuit board (e.g. from JLCPCB), the result should look like this:
