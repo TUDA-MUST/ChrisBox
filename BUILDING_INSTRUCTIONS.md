@@ -8,6 +8,8 @@ This are the building instructions for a complete ChrisBox setup. A complete set
 
 ![ChrisBox components for soldering](/data/ChrisBox_PCB_2_components.JPG)
 
+![ChrisBox places of soldering](/data/ChrisBox_PCB_1.1_unsoldered_marked.JPG)
+
 ![Soldered version of ChrisBox](/data/ChrisBox_PCB_3_soldered.JPG)
 
 ## PCB Software
