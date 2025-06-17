@@ -4,23 +4,50 @@ This are the building instructions for a complete ChrisBox setup. A complete set
 
 ## PCB Hardware
 
+When ordering a populated circuit board (e.g. from JLCPCB), the result should look like this:
+
 ![Unsoldered version of ChrisBox](/data/ChrisBox_PCB_1_unsoldered.JPG)
+
+This PCB is not finished. The shielding frame cannot be placed at JLCPCB, as well as the very high (G&Omega; range) feedback resistors for the charge amplifiers.
+As a result, these components have to be placed by hand:
+- Feedback resistors: 4x 0805 (in) or 2012 (mm), >2G&Omega;
+- Shield frame: 1x Laird Technologies, BMI-S-205-F
+- Shield cover: 1x Laird Technologies, BMI-S-205-C
 
 ![ChrisBox components for soldering](/data/ChrisBox_PCB_2_components.JPG)
 
+The places for the feedback resistors and the shielding frame are shown in the picture below. The shielding cover does not have to be soldered, it can be placed on the fence afterwards.
+> **Tip:** Things get easier if the resistors are soldered first because of the height of the components.
+> Also it can come handy to remove the cross in the middle of the shielding frame before soldering if some components have to be reached afterwards.
+Unfortunaly, fhe frame and connected shielding plane (in the PCB) are good in heat distribution. Therefore it takes a while to heat the pads and solder the frame.
+
 ![ChrisBox places of soldering](/data/ChrisBox_PCB_1.1_unsoldered_marked.JPG)
+
+The soldered resistors and frame can look like in the picture below. The soldering part of the PCB is finished now!
 
 ![Soldered version of ChrisBox](/data/ChrisBox_PCB_3_soldered.JPG)
 
 ## PCB Software
 
-![Arduino IDE select device](/data/ChrisBox_Software_1_select_device.JPG)
+On the PCB is an ESP32-S3 microcontroller (ESP32-S3-MINI-1). The connection between PC and microcontroller works with a UART-TO-USB bridge (CP2102N). This is the same bridge chip as on most ESP32 development boards. To enable interaction between a PC and the microcontroller on the ChrisBox PCB, the **Silicon Labs CP210x USB to UART Bridge** driver should be installed on the PC.
+After installing the driver, connect the ChrisBox PCB to the PC via micro USB cable and turn it on with the switch on the side. Before turing on one LED should work, after turning on multiple LEDs.
+The PC should detect a device called something like "Silicon Labs CP210x USB to UART Bridge" on a COM port. Remeber this COM port!
 
-![Arduino IDE upload options](/data/ChrisBox_Software_2_upload_options.JPG)
+Programming works with the **Arduino IDE**. Programming and the setting were tested with Arduino IDE 2.3.6, but other versions should work as well.
+In the Arduino IDE, select the device as in the picture below. Seelct the COM port accordingly to the one your PCB is connected to.
+It may be necessary to install the esp32 by espressif systems via board manager.
+
+![Arduino IDE select device](/data/ChrisBox_Software_1_select_device.png)
+
+Open the downloaded code in the Arduino IDE. It is important that all code files from this repository are in the same folder after downloading, that the Arduino IDE can find libraries while compiling.
+Select the upload options as shown below and hit upload. This can take a while. After finishing, the ESP reboots and the uploaded program starts. While a program is running, a LED is blinking on the PCB.
+You can see measurement data incoming on the serial monitor (select baud rate 115200). This serial data also can be viewed in the **Better Serial Plotter** or tools like **MATLAB**.
+
+![Arduino IDE upload options](/data/ChrisBox_Software_2_upload_options.png)
 
 ## Nextion Software
 
-The used Nextion display is a NX3224K024 display. The `.HMI` file with the code for the Nextion Editor is in the `./CODE` folder, as well a the `.tft` file. This `Chrisbox Nextion.tft` file can be flashed on a NX3224K024 display via micro SD card.
+The used Nextion display is a NX3224K024 display. The `.HMI` file with the code for the Nextion Editor is in the `./CODE` folder, as well a the `.tft` file. This `ChrisBox Nextion.tft` file can be flashed on a NX3224K024 display via micro SD card.
 Either you open the `.HMI` file in Nextion Editor and execute a TFT file output, or you just take the given `.tft` file:
 1. Save the `.tft` file to a fresh micro SD card.
 2. Insert this micro SD card into the Nextion display.
