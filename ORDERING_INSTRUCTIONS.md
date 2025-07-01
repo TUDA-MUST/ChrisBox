@@ -18,7 +18,7 @@ In the ordering process, select the option "Order Number(Specify Position)" if y
 
 ### Parts for PCB
 
-- **4x Resistor 5G&Omega**;, Footprint 0805 (the value of the feedback resistor decides about the low cutoff frequency of the charge amplifier. Feel free to choose different values here if other frequencies are required).
+- **4x Resistor >2G&Omega;**;, Footprint 0805 (the value of the feedback resistor decides about the low cutoff frequency of the charge amplifier. Feel free to choose different values here if other frequencies are required).
 - Shield Laird Technologies: **1x BMI-S-205-F** and **1x BMI-S-205-C** (F for frame, C for cover. These are two different pieces, one to be soldered on the PCB, the other to be stacked above.)
 
 ### Parts for Basic Measurement Setup
