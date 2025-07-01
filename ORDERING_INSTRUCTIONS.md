@@ -31,5 +31,5 @@ In the ordering process, select the option "Order Number(Specify Position)" if y
 
 - **1x Nextion NX3224K024** Display
 - 3D prints for the casing (these are probably no parts to be ordered, but to be printed in lab/at home)
-- **4x threaded inserts**
-- **4x screw**
+- **4x threaded inserts** M3 x 3,0 (the CAD has a blind hole of 4mm, and a diameter of 4mm)
+- **4x screw** M3x25 (the specific choice of screw head is not relevant, but the CAD was theoretically designed for countersunk heads)
