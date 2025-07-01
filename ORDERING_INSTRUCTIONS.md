@@ -8,7 +8,7 @@ It is recommended to read the other documents in this repository before ordering
 
 ## PCB
 
-The PCB is designed for ordering at JLCPCB. Files are prepared for a populated PCB. These files are made with the JLCPCB Tool in kiCad. Keep in mind that not all components on the PCB can be placed by JLCPCB (Feedback resistors and shield), so they have to be ordered seperatly.
+The PCB is designed for ordering at JLCPCB. Files are prepared for a populated PCB. These files are made with the JLCPCB Tool in kiCad. Keep in mind that not all components on the PCB can be placed by JLCPCB, so they have to be ordered seperatly (Feedback resistors and shield).
 
 The files are found in `./PCB/jlcpcb`. The gerber-files contain information about the raw PCB, the production-files contain the information about parts and their positions on the PCB.
 
