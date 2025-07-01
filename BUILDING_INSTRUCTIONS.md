@@ -23,7 +23,8 @@ As a result, these components have to be placed by hand:
 ![ChrisBox components for soldering](/data/ChrisBox_PCB_2_components.JPG)
 
 The places for the feedback resistors and the shielding frame are shown in the picture below. The shielding cover does not have to be soldered, it can be placed on the fence afterwards.
-> **Hint:** Things get easier if the resistors are soldered first because of the height of the components.
+> [!TIP]
+> Things get easier if the resistors are soldered first because of the height of the components.
 > Also it can come handy to remove the cross in the middle of the shielding frame before soldering if some components have to be reached afterwards.
 Unfortunaly, fhe frame and connected shielding plane (in the PCB) are good in heat distribution. Therefore it takes a while to heat the pads and solder the frame.
 
@@ -100,7 +101,8 @@ Place the PCB into the bottom half of the casing, with screws and spacers.
 
 Then connect both halfs of the casing and tighten the screws. The ChrisBox is finished!
 
-> **Hint:** Place the top half on top of the lower half with the screws and spacers on a table. Then move the assembly to the edge of the table that one screw can be tightened. Repeat for the other screws.
+> [!TIP]
+> Place the top half on top of the lower half with the screws and spacers on a table. Then move the assembly to the edge of the table that one screw can be tightened. Repeat for the other screws.
 
 <p align="center">
       <img src="/data/ChrisBox_Assembly_4_screws.JPG" width="49%">
