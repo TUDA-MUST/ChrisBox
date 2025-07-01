@@ -14,7 +14,8 @@ The main goals of development were
 
 More details about ChrisBox are here to find: [About ChrisBox](#about-chrisbox).
 
-> *IMPORTANT NOTE:* This document describes the features and assembly of ChrisBox and does not contain information on how to build or use ferroelectret sensors.
+> [!IMPORTANT]
+> This document describes the features and assembly of ChrisBox and does not contain information on how to build or use ferroelectret sensors.
 
 ![Rendering of ChrisBox with display, battery and connected ferroelectret sensors.](/data/ChrisBox_rendering.png)
 
