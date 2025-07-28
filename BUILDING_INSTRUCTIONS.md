@@ -16,7 +16,7 @@ When ordering a populated circuit board (e.g. from JLCPCB), the result should lo
 
 This PCB is not finished. The shielding frame cannot be placed at JLCPCB, as well as the very high (G&Omega; range) feedback resistors for the charge amplifiers.
 As a result, these components have to be placed by hand:
-- Feedback resistors: 4x 0805 (in) or 2012 (mm), >2G&Omega;
+- Feedback resistors: 4x 0805 (in) or 2012 (mm), 5G&Omega;
 - Shield frame: 1x Laird Technologies, BMI-S-205-F
 - Shield cover: 1x Laird Technologies, BMI-S-205-C
 
