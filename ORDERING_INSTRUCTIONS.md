@@ -10,15 +10,35 @@ It is recommended to read the other documents in this repository before ordering
 
 The PCB is designed for ordering at JLCPCB. Files are prepared for a populated PCB. These files are made with the JLCPCB Tool in kiCad. Keep in mind that not all components on the PCB can be placed by JLCPCB, so they have to be ordered seperatly (Feedback resistors and shield).
 
-The files are found in `./PCB/jlcpcb`. The gerber-files contain information about the raw PCB, the production-files contain the information about components and their positions on the PCB.
+The files are found in `./PCB/jlcpcb`. The gerber-files contain information about the raw PCB, the production-files contain the information about components and their positions on the PCB. The ordering process should look similar to the following screenshots:
+
+<p align="center">
+      <img src="/data/ChrisBox_JLC_1.png" width="49%">
+      <img src="/data/ChrisBox_JLC_2.png" width="49%">
+</p>
 
 In the ordering process, select the option "Order Number(Specify Position)" if you want to specify the position of the order number on your PCB. The silkcreen contains a text "JLCJLCJLCJLC" for this purpose under the shield. More information about this topic can be found here: [JLCPCB article](https://jlcpcb.com/help/article/How-to-remove-order-number-from-your-PCB).
+
+<p align="center">
+      <img src="/data/ChrisBox_JLC_3.png" width="49%">
+      <img src="/data/ChrisBox_JLC_4.png" width="49%">
+</p>
+
+<p align="center">
+      <img src="/data/ChrisBox_JLC_5.png" width="49%">
+      <img src="/data/ChrisBox_JLC_6.png" width="49%">
+</p>
+
+<p align="center">
+      <img src="/data/ChrisBox_JLC_7.png" width="49%">
+      <img src="/data/ChrisBox_JLC_8.png" width="49%">
+</p>
 
 ## Additional Required Parts
 
 ### Parts for PCB
 
-- **4x Resistor >2G&Omega;**;, Footprint 0805 (the value of the feedback resistor decides about the low cutoff frequency of the charge amplifier. Feel free to choose different values here if other frequencies are required).
+- **4x Resistor 5G&Omega;**;, Footprint 0805 (the value of the feedback resistor decides about the low cutoff frequency of the charge amplifier. Feel free to choose different values here if other frequencies are required).
 - Shield Laird Technologies: **1x BMI-S-205-F** and **1x BMI-S-205-C** (F for frame, C for cover. These are two different pieces, one to be soldered on the PCB, the other to be stacked above.)
 
 ### Parts for Basic Measurement Setup
