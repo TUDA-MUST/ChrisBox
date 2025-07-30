@@ -14,7 +14,7 @@ int DRDY_Pins[] = {8, 9, 10, 11};
 #define SCK     7   // SPI Clock
 #define MISO    6   // SPI MISO
 #define MOSI    5   // SPI MOSI
-#define SS      12  // Chip Select for ADC1, usable for SPI.begin(); -> for library. Later only the array is used for CS pins.
+#define SS      12  // Chip Select for ADC1, usable for SPI.begin(); -> for library. Later only the CS_Pins-array is used for CS pins.
 
 // LEDs
 #define LED1 33   // LED Green    -> status indicator if program is working
@@ -22,16 +22,13 @@ int DRDY_Pins[] = {8, 9, 10, 11};
 #define LED3 35   // LED Blue     -> status indicator if UART2 is connected/working
 #define LED4 36   // LED Blue     -> status indicator if ESP NOW is connected
 
-#define VREF 2      // Reference voltage, measured with internal ADC of ESP32
 #define VCC 1       // VCC, measured with internal ADC of ESP32
 
 // UART2 Pins
 #define UART2TXD 4  
 #define UART2RXD 37
-//#define UART2RTS 47
-//#define UART2CTS 48
 
-// 5V generatin enable
+// 5V generation enable
 #define EN_5V 48
 
 //-------------------------------------------------------------------------------------------------------------------
@@ -41,7 +38,7 @@ uint8_t broadcastAddress1[] = {0x08, 0x3a, 0xf2, 0xb9, 0x02, 0x40};   // REPLACE
 
 bool esp_now_connection = false;  // Decide if ESPNOW connection shall be used or not (required for ESP to ESP wireless connection)
 bool uart2_connection = true;     // Decide if UART2 shall be used (required for Nextion display)
-bool voltage_generation = true;        // Decide if the 5V voltage generation should work (required for Nextion display)
+bool voltage_generation = true;   // Decide if the 5V voltage generation should work (required for Nextion display)
 
 #define UART2BAUD 115200          // Define the baud rate for UART2 communication
 
@@ -69,10 +66,7 @@ int32_t adc_data[4];          // ... and a place to store their readings
 
 int displayPage;              // display page as int. 1 is the first page, 7 the last one.
 
-//-------------------------------------------------------------------------------------------------------------------
-// Setup for ESP_NOW
-
-// Struct, which is sent via ESP NOW
+// Struct, in which all measurement data is stored
 typedef struct four_ch_struct {
   double vcc;
   double vref;
@@ -84,6 +78,8 @@ typedef struct four_ch_struct {
 
 four_ch_struct data_struct;
 
+//-------------------------------------------------------------------------------------------------------------------
+// Setup for ESP_NOW
 esp_now_peer_info_t peerInfo;
 
 // callback when data is sent
@@ -125,8 +121,6 @@ void setup() {
     digitalWrite(EN_5V, LOW);
   }
   
-
-
   // -------------------------------------------------------
   // ESP NOW Start
   espNowConnected = false;
@@ -177,7 +171,7 @@ void setup() {
   pinMode(LED3, OUTPUT);        // ...  (UART2 connected)
   pinMode(LED4, OUTPUT);        // ...  (ESP NOW connected)
 
-  startupLEDshow();             // Little lightshow, because it is cool.
+  startupLEDshow();             // Little lightshow at the start, because it is cool.
   
   setupADCs();
   
@@ -207,8 +201,8 @@ void loop() {
   //data_struct.ferro3 = convertToMilliV(adc_data[2]);    // compute voltage of Ferro 3 (ADS1220)
   //data_struct.ferro4 = convertToMilliV(adc_data[3]);    // compute voltage of Ferro 4 (ADS1220)
 
-  
   // Serial print the measured values
+  // -> Serial print should work with BetterSerialPlotter on a PC
   // VCC und VRef
   Serial.print(data_struct.vcc, 6);       // The number (6) indicates how many decimal digits will be shown.
   Serial.print(" ");
@@ -225,9 +219,7 @@ void loop() {
   Serial.print(data_struct.ferro4, 6);
   Serial.print(" ");
   
-
   // --------------------------------------------------------------------
-
   // End print with new line
   Serial.println();
 
@@ -252,8 +244,6 @@ void loop() {
     readFromDisplay();
     sendDataToDisplay();
   }
-
-  //delay(100);
 }
 // End of loop
 
@@ -274,7 +264,21 @@ double getVCC() {
 
 // Calculates the VRef voltage from the analog read of VRef
 double getVRef() {
-  return analogRead(VREF) * (3.3 / 4095);
+  // Read AIN1 (absolute) of any of the four ADCs (here Nr. 0), then return to the usual measurement mode of that ADC (differential Input!)
+  // Do all this only if the VRef is shown on the display, otherwise this just reduces performance.
+  if (displayPage == 7) {
+    // Read AIN1 once
+    int32_t vref_adc = adc[0].Read_SingleShot_SingleEnded_WaitForData(MUX_SE_CH1);
+    // Convert to voltage
+    double vref_double = (double)convertToMilliV(vref_adc)/1000;
+
+    // Return to differential measurement mode
+    adc[0].select_mux_channels(MUX_AIN0_AIN1);
+    return vref_double;
+  } else {
+    return 0;
+  }
+  
 }
 
 
@@ -354,30 +358,13 @@ void setupADCs() {
     // setup for each ADC
     setupADC(i);
     Serial.println("ADC " + String(i) + " is set up.");    
-  }
-  
-  /*
-  Serial.print("SCK = ");
-  Serial.print(SCK);
-  Serial.print(", MISO = ");
-  Serial.print(MISO);
-  Serial.print(", MOSI = ");
-  Serial.println(MOSI);
-  Serial.print("ADC 1: ");
-  adc[0].printPins();  
-  Serial.print("ADC 2: ");
-  adc[1].printPins();
-  Serial.print("ADC 3: ");
-  adc[2].printPins();
-  Serial.print("ADC 4: ");
-  adc[3].printPins();*/
-  
+  }  
 }
 
 // Setup ADS1220
 void setupADC(int nr) {
   adc[nr].begin(CS_Pins[nr],DRDY_Pins[nr]);
-    // Set data rate of ADC to 1kHz
+  // Set data rate of ADC to 1kHz
   adc[nr].set_data_rate(DR_1000SPS);
   // Set internal gain in ADC to 1
   adc[nr].set_pga_gain(PGA_GAIN_1);
