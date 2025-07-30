@@ -337,7 +337,7 @@ void refreshLEDs() {
 }
 
 //-------------------------------------------------------------------------------------------------------------------
-// Starten der vier ADCs
+// Start of the four ADCs
 void setupADCs() {
 
   // Start SPI connection to ADCs
