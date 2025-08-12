@@ -204,10 +204,10 @@ void loop() {
   // Serial print the measured values
   // -> Serial print should work with BetterSerialPlotter on a PC
   // VCC und VRef
-  Serial.print(data_struct.vcc, 6);       // The number (6) indicates how many decimal digits will be shown.
-  Serial.print(" ");
-  Serial.print(data_struct.vref, 6);
-  Serial.print(" ");
+  // Serial.print(data_struct.vcc, 6);       // The number (6) indicates how many decimal digits will be shown.
+  // Serial.print(" ");
+  // Serial.print(data_struct.vref, 6);
+  // Serial.print(" ");
 
   // Four Channel
   Serial.print(data_struct.ferro1, 6);
