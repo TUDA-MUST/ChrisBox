@@ -17,7 +17,7 @@ The CAD is made with Siemens NX, and STL data is provided, e.g. for 3D printing.
 
 For building instructions refer to [BUILDING INSTRUCTIONS](/BUILDING_INSTRUCTIONS.md).
 
-## Alternate Version without the Nextion Screenshot
+## Alternate Version without the Nextion screen
 
 If you are only interested in a Chrisbox without a display, you will find a protective case for the PCB in the “00_VersionWithoutScreen” folder. 
 ![Screenshot of a ChrisBox Assembly wihtout a screen](/CAD/00_VersionWithoutScreen/ScreenShotSlicerWithoutScreen.png)
