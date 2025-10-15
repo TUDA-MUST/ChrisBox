@@ -1,0 +1,88 @@
+CERN Open Hardware Licence Version 2 - Weakly Reciprocal
+
+Preamble
+
+CERN has developed this licence to promote collaboration among hardware designers and to provide a legal tool which supports the freedom to use, study, modify, share and distribute hardware designs and products based on those designs. Version 2 of the CERN Open Hardware Licence comes in three variants: this licence, CERN-OHL-W (for weakly reciprocal), and two other licences: CERN-OHL-P (permissive) and CERN-OHL-S (strongly reciprocal).
+
+The CERN-OHL-W is copyright CERN 2020. Anyone is welcome to use it, in unmodified form only.
+
+CERN-OHL-W
+
+1 Definitions
+
+In this Licence, the following terms have the following meanings:
+
+“Licence” means this CERN-OHL-W.
+
+“Documentation” means schematic diagrams, designs, circuit or circuit board layouts, mechanical drawings, flow charts and descriptive text, and other explanatory material that is explicitly stated as being made available under the terms of this Licence. The Documentation may be in any medium, including but not limited to computer files and representations on paper, optical or magnetic media.
+
+“Source” means the preferred form of the Documentation for making modifications to it, including any comments, design materials or data necessary for an existing or potential licensee to make, use, modify, share, study and distribute the Documentation and Products.
+
+“Product” means any device, component, work or physical object made or assembled from the Documentation, or from a modified version of the Documentation. The act of making or assembling is referred to as “Manufacturing”.
+
+“Licensee” or “You” means any person exercising rights under this Licence.
+
+“Licensor” means any person who creates or modifies Documentation and subsequently makes it available under the terms of this Licence.
+
+A Licensee may at the same time be a Licensor, and vice versa.
+
+“Compatible Licence” means a licence listed in the Compatibility List published by CERN. This list may be updated by CERN from time to time. If a licence is removed from the Compatibility List, it is not a Compatible Licence for any Documentation first made available under this Licence after the removal. CERN will take reasonable measures to ensure that the Compatibility List is and remains reasonable.
+
+2 Applicability
+
+This Licence governs the use, copying, modification, communication to the public and distribution of the Documentation, and the Manufacture and distribution of Products. By exercising any right granted under this Licence, You irrevocably accept these terms and conditions.
+
+3 Copying, modification, communication to the public and distribution of the Documentation
+
+3.1 You may copy and distribute the Documentation, provided that You include a copy of this Licence in any such copy, and You do not impose any further restrictions on the recipients’ exercise of the rights granted herein.
+
+3.2 You may modify the Documentation, and You may copy and distribute modified versions of the Documentation, provided that You:
+
+(a) use the same Licence for the modified Documentation;  
+(b) include a prominent notice in the modified Documentation stating that You have modified the Documentation, and the date of modification;  
+(c) include a prominent notice in the modified Documentation stating that it is released under this Licence; and  
+(d) do not impose any further restrictions on the recipients’ exercise of the rights granted herein.
+
+3.3 If the Documentation includes notices stating that it is governed by this Licence, You must keep intact all notices that refer to this Licence and to the disclaimer of warranties and limitation of liabilities, and give all recipients a copy of this Licence along with the Documentation.
+
+3.4 You may communicate the Documentation to the public, including by posting it on a website, provided that You comply with the terms of this Licence.
+
+4 Manufacture and distribution of Products
+
+4.1 You may Manufacture or distribute Products always provided that You comply with clause 3.
+
+4.2 You may distribute Products to others. When You do so, You must do one of the following:
+
+(a) make available to each recipient of a Product the Source of the Documentation for the Product, in a commonly accessible form such as by posting it on a website, and include in the Product or its documentation a written offer to the recipient to provide the Source; or  
+(b) include with the Product the Source of the Documentation for the Product on a durable physical medium customarily used for software interchange; or  
+(c) when the Product is supplied to an entity that has a pre-existing contractual relationship with You that covers the supply of the Product, ensure that the Source is available to that entity under the terms of this Licence.
+
+4.3 When You distribute Products, You must include any notices to the effect that the Product is based on Documentation licensed under this Licence, reproducing those notices in any relevant documentation and/or user interface, where such notices were supplied by the Licensor.
+
+5 Patent licensing
+
+5.1 Subject to the terms and conditions of this Licence, each Licensor hereby grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable (except as stated in this section) patent licence to make, have made, use, offer to sell, sell, import, and otherwise transfer the Documentation and Products, where such licence applies only to those patent claims licensable by such Licensor that are necessarily infringed by the Documentation or by making, using, or selling Products.
+
+5.2 If You institute patent litigation against any entity (including a cross-claim or counterclaim in a lawsuit) alleging that the Documentation or a Product constitutes direct or contributory patent infringement, then any patent licences granted to You under this Licence for that Documentation or Product shall terminate as of the date such litigation is filed.
+
+6 Good practices
+
+6.1 You are encouraged to include a “Change Log” in the Documentation, to keep track of changes such as modifications, dates and authors. You are also encouraged to note the Software and version used to design the Hardware, in order to maximize the chances that the Documentation can be accessed and modified in the future.
+
+6.2 To ease Manufacturing, You are encouraged to include information on the Bill of Materials and Manufacturing documentation.
+
+7 Disclaimer of warranty and limitation of liability
+
+7.1 DISCLAIMER OF WARRANTY — The Documentation and any Products are provided “as is” and any express or implied warranties, including, but not limited to, implied warranties of merchantability, of satisfactory quality, non-infringement of third party rights, and fitness for a particular purpose or use are disclaimed in respect of the Documentation and any Products to the maximum extent permitted by law. The Licensor makes no representation that the Documentation, or any Products, do not or will not infringe any patent, copyright, trade secret or other proprietary right. The entire risk as to the use, quality, and performance of the Documentation and any Products shall be with You and not the Licensor. This disclaimer of warranty is an essential part of this Licence and a condition for the grant of any rights granted under this Licence.
+
+7.2 LIMITATION OF LIABILITY — To the maximum extent permitted by law, in no event will the Licensor, or any contributor, be liable for any direct, indirect, special, incidental, consequential, punitive or exemplary damages arising out of or in connection with this Licence or the use of the Documentation or any Products, including without limitation damages for loss of goodwill, work stoppage, computer failure or malfunction, loss of data or any commercial damages or losses, even if advised of the possibility thereof; and You agree to hold the Licensor and any contributor free and harmless from any liability, costs, damages, fees and expenses, including claims by third parties, in relation to such use.
+
+8 General
+
+8.1 If any provision of this Licence is invalid or unenforceable under applicable law, it shall not affect the validity or enforceability of the remainder of the terms of this Licence, and without further action by the parties to this agreement, such provision shall be reformed to the minimum extent necessary to make such provision valid and enforceable.
+
+8.2 This Licence shall not be enforceable except by a Licensor acting as such, and third party beneficiary rights are specifically excluded.
+
+8.3 The rights granted under this Licence are granted free of charge and for the term of all intellectual property rights that may subsist in the Documentation or Products; nevertheless, the Licence may be terminated in accordance with its terms.
+
+End of Licence
