@@ -1,21 +1,28 @@
-MIT License
+ChrisBox — License Overview
 
-Copyright (c) 2025 Technische Universität Darmstadt - Measurement and Sensor Technology Group
+This repository contains multiple asset types. Each type has its own license:
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+• CODE (firmware, plus our modified ADS1220 driver):
+  Licensed under the MIT License.
+  → See: LICENSES/MIT.txt
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+• HARDWARE (PCB design files, mechanical CAD/STL/NX):
+  Licensed under CERN Open Hardware Licence Version 2 — Weakly Reciprocal (CERN-OHL-W-2.0).
+  → See: LICENSES/CERN-OHL-W-2.0.txt
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+• DOCUMENTATION & IMAGES (README, build guides, renders, photos, Nextion HMI design/.HMI):
+  Licensed under Creative Commons Attribution 4.0 International (CC BY 4.0).
+  → See: LICENSES/CC-BY-4.0.txt
+
+• FONTS & DISPLAY ARTIFACTS
+  The Nextion `Font 1.zi` and compiled `.tft` embed data derived from the Roboto font.
+  Roboto is licensed by Google and contributors; see fonts/Roboto/(OFL.txt or LICENSE.txt).
+  These artifacts are covered by the Roboto font’s license and are NOT re-licensed by us.
+
+Third-party components included or required by this project retain their original licenses.
+See the NOTICE file for attributions and details.
+
+SPDX usage (add to files where practical):
+• Source code files:            SPDX-License-Identifier: MIT
+• PCB/CAD design files:         SPDX-License-Identifier: CERN-OHL-W-2.0
+• Markdown docs & images:       SPDX-License-Identifier: CC-BY-4.0
