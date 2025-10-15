@@ -17,7 +17,7 @@ More details about ChrisBox are here to find: [About ChrisBox](#about-chrisbox).
 > [!IMPORTANT]
 > This document describes the features and assembly of ChrisBox and does not contain information on how to build or use ferroelectret sensors.
 
-![Rendering of ChrisBox with display, battery and connected ferroelectret sensors.](/data/ChrisBox_rendering.png)
+![Rendering of ChrisBox with display, battery and connected ferroelectret sensors.](/data/ChrisBox_rendering_inscription.png)
 
 ## About this Repository
 
@@ -82,10 +82,10 @@ There are different ways as output for the aquired measurement data:
 ## Contributors
 
 ChrisBox was developed at the [Measurement and Sensor Technology Group](https://www.etit.tu-darmstadt.de/must/home_must/index.de.jsp) at TU Darmstadt by:
-- [Sven Suppelt]() (Supervision)
-- [Dominik Werner]() (Hardware and Software Design, CAD Design)
-- [Alexander Altmann]() (Supporting Ferroelectret Knowledge)
-- [Felix Herbst]() (Artwork)
+- [Sven Suppelt](https://orcid.org/0000-0002-2338-9333) (Supervision)
+- [Dominik Werner](https://orcid.org/0009-0001-8082-5584) (Hardware and Software Design, CAD Design)
+- [Alexander Altmann](https://orcid.org/0000-0001-5299-3620) (Supporting Ferroelectret Knowledge)
+- [Felix Herbst](https://orcid.org/0000-0003-1480-3691) (Artwork)
 
 ## Citation
 
