@@ -92,7 +92,7 @@ ChrisBox was developed at the [Measurement and Sensor Technology Group](https://
 If you would like to reference the project, please cite the following (yet to publish...) [paper](https://www.etit.tu-darmstadt.de/must/home_must/index.de.jsp):
 
 ```
-@inproceedings{name2025,
+@article{name2025,
   author={},
   booktitle={}, 
   title={}, 
