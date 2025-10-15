@@ -1,0 +1,44 @@
+THIRD-PARTY NOTICES
+ChrisBox
+Copyright (c) 2025 Measurement and Sensor Technology Group (MUST),
+TU Darmstadt and contributors
+
+This project includes or depends on third-party components. Each retains its
+own license as noted below.
+
+— Runtime/toolchain dependencies (not distributed in this repo) —
+• Arduino core for ESP32 — © Espressif Systems — LGPL-2.1
+  Used for esp_now.h, WiFi.h, SPI, HardwareSerial, etc.
+
+• ESP-IDF (indirectly via Arduino core) — © Espressif Systems — Apache-2.0
+  Used indirectly by Arduino-ESP32.
+
+— Source files included or derived within this repo —
+• ProtoCentral ADS1220 library (modified)
+  © 2018 Ashwin Whitchurch / ProtoCentral — MIT
+  Our files retain the original MIT header comments.
+
+• Fonts (used for Nextion assets)
+  Roboto — © Google and contributors — (SIL OFL 1.1) or (Apache-2.0)
+  See fonts/Roboto/ for the exact TTF(s) and the bundled license file
+  (OFL.txt or LICENSE.txt). The Nextion `Font 1.zi` and `.tft` embed data
+  derived from Roboto and are covered by that license.
+
+• KiCad libraries and 3D models
+  If any official KiCad library assets (symbols/footprints/3D) are copied
+  into this repository, they are licensed under CC-BY-SA 4.0 with the
+  KiCad libraries’ design-use exception. If the project only references
+  KiCad’s system libraries via environment variables, this line is
+  informational and no redistribution applies.
+
+• Vendor footprints / 3D models (if present)
+  Connector/module models or footprints copied from vendors remain
+  © their respective owners. See any accompanying per-file license or
+  README next to those assets.
+
+Notes:
+• Tools used to generate manufacturing artifacts (e.g., JLCPCB KiCad plugin,
+  Nextion Editor) are not distributed here; their licenses apply to the tools
+  themselves, not to this repository.
+• For the licenses that apply to *our* materials, see the top-level LICENSE
+  overview and the texts in the LICENSES/ directory.
