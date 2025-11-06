@@ -26,7 +26,7 @@ The places for the feedback resistors and the shielding frame are shown in the p
 > [!TIP]
 > Things get easier if the resistors are soldered first because of the height of the components.
 > Also it can come handy to remove the cross in the middle of the shielding frame before soldering if some components have to be reached afterwards.
-Unfortunaly, fhe frame and connected shielding plane (in the PCB) are good in heat distribution. Therefore it takes a while to heat the pads and solder the frame.
+Unfortunately, fhe frame and connected shielding plane (in the PCB) are good in heat distribution. Therefore it takes a while to heat the pads and solder the frame.
 
 ![ChrisBox places of soldering](/data/ChrisBox_PCB_1.1_unsoldered_marked.JPG)
 
@@ -38,11 +38,11 @@ The soldered resistors and frame can look like in the picture below. The solderi
 
 On the PCB is an ESP32-S3 microcontroller (ESP32-S3-MINI-1). The connection between PC and microcontroller works with a UART-TO-USB bridge (CP2102N). This is the same bridge chip as on most ESP32 development boards. To enable interaction between a PC and the microcontroller on the ChrisBox PCB, the **Silicon Labs CP210x USB to UART Bridge** driver should be installed on the PC.
 After installing the driver, connect the ChrisBox PCB to the PC via micro USB cable and turn it on with the switch on the side. Before turing on one LED should work, after turning on multiple LEDs.
-The PC should detect a device called something like "Silicon Labs CP210x USB to UART Bridge" on a COM port. Remeber this COM port!
+The PC should detect a device called something like "Silicon Labs CP210x USB to UART Bridge" on a COM port. Remember this COM port!
 
 Programming works with the **Arduino IDE**. Programming and the setting were tested with Arduino IDE 2.3.6, but other versions should work as well.
-In the Arduino IDE, select the device as in the picture below. Seelct the COM port accordingly to the one your PCB is connected to.
-It may be necessary to install the esp32 by espressif systems via board manager.
+In the Arduino IDE, select the device as in the picture below. Select the COM port accordingly to the one your PCB is connected to.
+It may be necessary to install the esp32 by Espressif Systems via the Boards Manager.
 
 ![Arduino IDE select device](/data/ChrisBox_Software_1_select_device.png)
 
@@ -86,7 +86,7 @@ First, insert the threaded inserts into the top of the casing with a solder iron
 </p>
 
 Then connect the Nextion display to the ChrisBox PCB. An ordered Nextion display contains a cable with on JST XH connector (the white 4x1 connector) and four Dupont connectors (the black 1x1 connectors).
-Connect the JST XH connector to the display. You can connect the Dupont cables on the ChrisBox PCB, or you can shorten the cables and add crimp connectins for another JST XH connector. This is what is used here on the picture. The JST XH connector fits directly onto the ChrisBox PCB.
+Connect the JST XH connector to the display. You can connect the Dupont cables on the ChrisBox PCB, or you can shorten the cables and add crimp connections for another JST XH connector. This is what is used here on the picture. The JST XH connector fits directly onto the ChrisBox PCB.
 Anyway, connect GND to GND, 5V to 5V and RX to TX and the other way around.
 Place the shielding cover onto the shielding frame on the PCB.
 
@@ -99,7 +99,7 @@ Place the display into the top half of the casing, with the connector in the dir
 
 Place the PCB into the bottom half of the casing, with screws and spacers.
 
-Then connect both halfs of the casing and tighten the screws. The ChrisBox is finished!
+Then connect both halves of the casing and tighten the screws. The ChrisBox is finished!
 
 > [!TIP]
 > Place the top half on top of the lower half with the screws and spacers on a table. Then move the assembly to the edge of the table that one screw can be tightened. Repeat for the other screws.
