@@ -1,7 +1,7 @@
 # Ordering Instructions
 
 In this document information about the ordering process of various components can be found. This is segmented in the core PCB, required components for the PCB and additional material for a full ChrisBox setup.
-It is recommended to read the other documents in this repository before ordering, as provided explainations about the different components ensure understanding of the ChrisBox and help avoiding mistakes in the ordering process.
+It is recommended to read the other documents in this repository before ordering, as provided explanations about the different components ensure understanding of the ChrisBox and help avoiding mistakes in the ordering process.
 
 - [README](/README.md)
 - [BUILDING INSTRUCTIONS](/BUILDING_INSTRUCTIONS.md)
@@ -13,14 +13,14 @@ The PCB is designed for ordering at JLCPCB. Files are prepared for a populated P
 The files are found in `./PCB/jlcpcb`. The gerber-files contain information about the raw PCB, the production-files contain the information about components and their positions on the PCB. The ordering process should look similar to the following screenshots:
 
 > [!NOTE]
-> The voltage generation for VRef (U1) is planned to be 1.6V in the schematic. In the JLCPCB tool and therefore in the exported data a 1.8V model is used due to production capatibilty (at the time of data export). A reference voltage apart from 1.65V is no problem due to the differential measurement, but is shifts the measurement range so that "zero" is not in the middle and more positive or negative values can be measured.
+> The voltage generation for VRef (U1) is planned to be 1.6V in the schematic. In the JLCPCB tool and therefore in the exported data a 1.8V model is used due to production capability (at the time of data export). A reference voltage apart from 1.65V is no problem due to the differential measurement, but is shifts the measurement range so that "zero" is not in the middle and more positive or negative values can be measured.
 
 <p align="center">
       <img src="/data/ChrisBox_JLC_1.png" width="49%">
       <img src="/data/ChrisBox_JLC_2.png" width="49%">
 </p>
 
-In the ordering process, select the option "Order Number(Specify Position)" if you want to specify the position of the order number on your PCB. The silkcreen contains a text "JLCJLCJLCJLC" for this purpose under the shield. More information about this topic can be found here: [JLCPCB article](https://jlcpcb.com/help/article/How-to-remove-order-number-from-your-PCB).
+In the ordering process, select the option "Order Number(Specify Position)" if you want to specify the position of the order number on your PCB. The silkscreen contains a text "JLCJLCJLCJLC" for this purpose under the shield. More information about this topic can be found here: [JLCPCB article](https://jlcpcb.com/help/article/How-to-remove-order-number-from-your-PCB).
 
 <p align="center">
       <img src="/data/ChrisBox_JLC_3.png" width="49%">
