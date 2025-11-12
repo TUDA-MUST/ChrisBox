@@ -98,6 +98,7 @@ ChrisBox was developed at the [Measurement and Sensor Technology Group](https://
 - [Alexander A. Altmann](https://orcid.org/0000-0001-5299-3620)
 - [Felix Herbst](https://orcid.org/0000-0003-1480-3691)
 - [Jan H. Dörsam](https://orcid.org/0000-0001-9807-6641)
+- [Bastian Latsch](https://orcid.org/0000-0001-9929-5694)
 - [Prof. Mario Kupnik](https://orcid.org/0000-0003-2287-4481)
 
 ## Citation
