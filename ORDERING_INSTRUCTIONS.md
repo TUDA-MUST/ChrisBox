@@ -55,6 +55,7 @@ In the ordering process, select the option "Order Number(Specify Position)" if y
 ## Full ChrisBox Setup
 
 - [**1x Nextion NX3224K024**](https://nextion.tech/datasheets/nx3224k024/) Display
+- A 720mAh 3.7V Lithium Polymer battery with JST PH Plug
 - 3D prints for the casing (these are probably no parts to be ordered, but to be printed in lab/at home)
 - [**4x threaded insert**](https://cnckitchen.store/de/products/heat-set-insert-m3-x-3-short-version-100-pieces) M3 x 3,0 (the CAD has a blind hole of 4mm, and a diameter of 4mm)
 - [**4x screw**](https://www.amazon.de/Sechskopf-Knopf-Zylinderschrauben-Gewindeschrauben-Sechskantschrauben-Maschinenschrauben/dp/B0B3MGZ7T2/) M3x25 (the specific choice of screw head is not relevant, but the CAD was theoretically designed for countersunk heads)
