@@ -1,9 +1,15 @@
+/*
+  ChrisBox_Code.ino - Code for the ChrisBox - a multi-channel ferroelectret measurement device
+  @authors Dominik Werner and Luis Gross
+  @date   2026-02-04
+  @version 1.1
+  at MUST-TU Darmstadt, Germany
+*/
 //-------------------------------------------------------------------------------------------------------------------
 // Include Libraries
 #include <esp_now.h>                  // for ESP NOW communication
 #include <WiFi.h>                     // for ESP NOW communication
-#include "Protocentral_ADS1220_mod.h" // for ADS1220 communication
-#include <SPI.h>                      // for ADS1220 communication
+#include <ADS1220_WE.h>                      // for ADS1220 communication
 
 //-------------------------------------------------------------------------------------------------------------------
 // Define Pins
@@ -14,7 +20,6 @@ int DRDY_Pins[] = {8, 9, 10, 11};
 #define SCK     7   // SPI Clock
 #define MISO    6   // SPI MISO
 #define MOSI    5   // SPI MOSI
-#define SS      12  // Chip Select for ADC1, usable for SPI.begin(); -> for library. Later only the CS_Pins-array is used for CS pins.
 
 // LEDs
 #define LED1 33   // LED Green    -> status indicator if program is working
@@ -36,6 +41,7 @@ int DRDY_Pins[] = {8, 9, 10, 11};
 
 uint8_t broadcastAddress1[] = {0x08, 0x3a, 0xf2, 0xb9, 0x02, 0x40};   // REPLACE WITH YOUR ESP RECEIVER'S MAC ADDRESS
 
+bool display_charge = true;    // Decide if the charge value shall be displayed (true) or the voltage value (false) on the Nextion display
 bool esp_now_connection = false;  // Decide if ESPNOW connection shall be used or not (required for ESP to ESP wireless connection)
 bool uart2_connection = true;     // Decide if UART2 shall be used (required for Nextion display)
 bool voltage_generation = true;   // Decide if the 5V voltage generation should work (required for Nextion display)
@@ -43,15 +49,11 @@ bool voltage_generation = true;   // Decide if the 5V voltage generation should 
 #define UART2BAUD 115200          // Define the baud rate for UART2 communication
 
 #define CF 360                    // Feedback capacitance [pF] (Q = C * U, Charge = CF * Voltage)
-double maxCharge = 1.7 * CF;      // max voltage (plus or minus) * feedback capacitance.
 
 #define thresVCC 3.2              // Threshold for VCC, where the battery indicator should start blinking (ESP 32 recommended minimum voltage is 3.0V)
-
-#define PGA          1                        // ADS1220, Programmable Gain = 1
-#define VREFADC      3.28                     // ADS1220, Reference voltage
-#define VFSR         VREFADC/PGA              // ADS1220
-#define FULL_SCALE   (((long int)1<<23)-1)    // ADS1220
-
+  
+#define VREFADC  3.28         // ADS1220, Reference voltage
+#define NUM_ADCS 4
 //-------------------------------------------------------------------------------------------------------------------
 // Variables
 
@@ -60,11 +62,22 @@ int lastBlinkBattery;         // time of last blink for Battery Warning LED2
 bool uartConnected;           // marker wheter UART2 is connected or not -> shown by blue LED3
 bool espNowConnected;         // marker whether ESP NOW is connected -> shown by blue LED4
 bool batteryAlert;            // marker if the voltage is too low
+double vRef_mV;             // measured VRef in millivolt
+double maxVoltagePlus;        // maximum voltage for positive charge calculation
+double maxChargePlus;         // maximum charge for positive charge calculation
+double maxVoltageMinus;       // maximum voltage for negative charge calculation
+double maxChargeMinus;        // maximum charge for negative charge calculation
 
-Protocentral_ADS1220_mod adc[4];  // Four ADCs...
-int32_t adc_data[4];          // ... and a place to store their readings
 
-int displayPage;              // display page as int. 1 is the first page, 7 the last one.
+ADS1220_WE adc[NUM_ADCS] = {
+  ADS1220_WE(&SPI, CS_Pins[0], DRDY_Pins[0], MOSI, MISO, SCK, true, false),
+  ADS1220_WE(&SPI, CS_Pins[1], DRDY_Pins[1], MOSI, MISO, SCK, true, false),
+  ADS1220_WE(&SPI, CS_Pins[2], DRDY_Pins[2], MOSI, MISO, SCK, true, false),
+  ADS1220_WE(&SPI, CS_Pins[3], DRDY_Pins[3], MOSI, MISO, SCK, true, false)
+};  // Four ADCs...
+float adc_data[4];          // ... and a place to store their readings
+
+int displayPage = 0;              // display page as int. 1 is the first page, 7 the last one.
 
 // Struct, in which all measurement data is stored
 typedef struct four_ch_struct {
@@ -135,7 +148,7 @@ void setup() {
       espNowConnected = true;
     }
     
-    esp_now_register_send_cb(OnDataSent);
+    // esp_now_register_send_cb(OnDataSent); //Produces Errors
     
     // register peer
     peerInfo.channel = 0;  
@@ -160,7 +173,7 @@ void setup() {
     Serial.println(UART2BAUD);
 
     displaySerial.print(endChar);                           // Send end Char to start a clean conversation
-    displaySerial.print("page All_Channels_A" + endChar);   // Send page command to start on the first page.
+    displaySerial.print("page Splash" + endChar);   // Send page command to start on the first page.
     displayPage = 1;
   }  
 
@@ -175,7 +188,13 @@ void setup() {
   
   setupADCs();
   
-  // Initialisieren von Variablen (für LEDs)
+  // Initialisieren von Variablen
+  vRef_mV = getVRef()*1000;                    // VRef in millivolt
+  maxVoltagePlus = 3.3 - (vRef_mV / 1000.0);   // max voltage for display plus 
+  maxChargePlus = maxVoltagePlus * CF;         // max voltage plus * feedback capacitance.
+  maxVoltageMinus = 0 - (vRef_mV / 1000.0);    // max voltage for display minus
+  maxChargeMinus = maxVoltageMinus * CF;       // max voltage minus * feedback capacitance.
+
   lastBlink = millis();
   lastBlinkBattery = millis();
 
@@ -189,25 +208,40 @@ void loop() {
   refreshLEDs();        // update LEDs for blinking and status etc.
   readoutADCs();        // read ADC data from all four ADCs
 
-  data_struct.vcc = getVCC();                           // read and store VCC (internal ADC)
-  data_struct.vref = getVRef();                         // read and store VRef (internal ADC)
-  data_struct.ferro1 = convertToPicoC(adc_data[0]);    // compute charge of Ferro 1 (ADS1220)
-  data_struct.ferro2 = convertToPicoC(adc_data[1]);    // compute charge of Ferro 2(ADS1220)
-  data_struct.ferro3 = convertToPicoC(adc_data[2]);    // compute charge of Ferro 3 (ADS1220)
-  data_struct.ferro4 = convertToPicoC(adc_data[3]);    // compute charge of Ferro 4 (ADS1220)
+  // // Debug
+  // adc_data[0] = 3300;
+  // adc_data[1] = 0;
+  // adc_data[2] = 2000;
+  // adc_data[3] = 1000;
 
-  //data_struct.ferro1 = convertToMilliV(adc_data[0]);    // compute voltage of Ferro 1 (ADS1220)
-  //data_struct.ferro2 = convertToMilliV(adc_data[1]);    // compute voltage of Ferro 2(ADS1220)
-  //data_struct.ferro3 = convertToMilliV(adc_data[2]);    // compute voltage of Ferro 3 (ADS1220)
-  //data_struct.ferro4 = convertToMilliV(adc_data[3]);    // compute voltage of Ferro 4 (ADS1220)
 
+  if(displayPage == 7){
+    data_struct.vcc = getVCC();                           // read and store VCC (internal ADC)
+    data_struct.vref = getVRef();                         // read and store VRef (internal ADC)
+  }  
+  if(display_charge) {
+    // Convert ADC voltage readings to charge values
+    data_struct.ferro1 = convertToPicoC(adc_data[0]);    // compute charge of Ferro 1 (ADS1220)
+    data_struct.ferro2 = convertToPicoC(adc_data[1]);    // compute charge of Ferro 2(ADS1220)
+    data_struct.ferro3 = convertToPicoC(adc_data[2]);    // compute charge of Ferro 3 (ADS1220)
+    data_struct.ferro4 = convertToPicoC(adc_data[3]);    // compute charge of Ferro 4 (ADS1220)
+  } else {
+    // Store ADC voltage readings directly
+    data_struct.ferro1 = adc_data[0];    // voltage of Ferro 1 (ADS1220)
+    data_struct.ferro2 = adc_data[1];    // voltage of Ferro 2(ADS1220)
+    data_struct.ferro3 = adc_data[2];    // voltage of Ferro 3 (ADS1220)
+    data_struct.ferro4 = adc_data[3];    // voltage of Ferro 4 (ADS1220)
+  }
+
+
+  // --------------------------------------------------------------------
   // Serial print the measured values
   // -> Serial print should work with BetterSerialPlotter on a PC
   // VCC und VRef
-  // Serial.print(data_struct.vcc, 6);       // The number (6) indicates how many decimal digits will be shown.
-  // Serial.print(" ");
-  // Serial.print(data_struct.vref, 6);
-  // Serial.print(" ");
+  Serial.print(data_struct.vcc, 6);       // The number (6) indicates how many decimal digits will be shown.
+  Serial.print(" ");
+  Serial.print(data_struct.vref, 6);
+  Serial.print(" ");
 
   // Four Channel
   Serial.print(data_struct.ferro1, 6);
@@ -262,34 +296,31 @@ double getVCC() {
   return vcc;
 }
 
-// Calculates the VRef voltage from the analog read of VRef
+// Measures the VRef voltage from the read of VRef at ADC1
 double getVRef() {
-  // Read AIN1 (absolute) of any of the four ADCs (here Nr. 0), then return to the usual measurement mode of that ADC (differential Input!)
   // Do all this only if the VRef is shown on the display, otherwise this just reduces performance.
-  if (displayPage == 7) {
-    // Read AIN1 once
-    int32_t vref_adc = adc[0].Read_SingleShot_SingleEnded_WaitForData(MUX_SE_CH1);
-    // Convert to voltage
-    double vref_double = (double)convertToMilliV(vref_adc)/1000;
+    adc[0].setCompareChannels(ADS1220_MUX_1_AVSS);
+    // adc[0].start(); // ADC Ferro
 
-    // Return to differential measurement mode
-    adc[0].select_mux_channels(MUX_AIN0_AIN1);
+    // while(digitalRead(DRDY_Pins[0])){}
+
+    double vref_double = adc[0].getVoltage_mV() / 1000;
+    adc[0].setCompareChannels(ADS1220_MUX_0_AVSS);
+
     return vref_double;
-  } else {
-    return 0;
   }
-  
-}
 
-
-// Converts the given ads data to mV
-float convertToMilliV(int32_t i32data) {
-    return (float)((i32data*VFSR*1000)/FULL_SCALE);
-}
 
 // Converts the given voltage (millivolt) to charge (mC), with given feedback capacitance CF
-float convertToPicoC(int32_t i32data) {
-  return (float) CF * convertToMilliV(i32data) / 1000; //Conversion from pF and mV to pC 
+// Voltage Jumps: max. +/- 1.5V -> max. +/- 540 pC with CF = 360pF
+float convertToPicoC(double voltage_mV) {
+  float charge_pC = CF * ((voltage_mV - vRef_mV) / 1000); //Conversion from pF and mV to pC 
+  if(charge_pC > maxChargePlus) {
+    charge_pC = maxChargePlus;
+  } else if(charge_pC < maxChargeMinus) {
+    charge_pC = maxChargeMinus;
+  }
+  return charge_pC;
 }
 
 // Inverts the digital output (e.g. LED) of a pin
@@ -337,23 +368,26 @@ void refreshLEDs() {
 }
 
 //-------------------------------------------------------------------------------------------------------------------
-// Start of the four ADCs
-void setupADCs() {
-
-  // Start SPI connection to ADCs
-  Serial.println("Start SPI");
-  SPI.begin(SCK, MISO, MOSI, SS);
-  Serial.println("Configured SPI");
-
-  // Setup CS pins (output and HIGH)
-  for (int i = 0; i < 4; i++) {
-    pinMode(CS_Pins[i], OUTPUT);
-    digitalWrite(CS_Pins[i], HIGH);
-
-    // Fill array with ADS1220-objects
-    adc[i] = Protocentral_ADS1220_mod();
+void setupADC(int nr) {
+  if(!adc[nr].init()){
+    Serial.println("ADC is not connected!");
+    while(1);
   }
 
+  adc[nr].bypassPGA(false);
+  adc[nr].setDataRate(ADS1220_DR_LVL_6);
+  adc[nr].setConversionMode(ADS1220_SINGLE_SHOT);
+  adc[nr].setVRefSource(ADS1220_VREF_REFP0_REFN0);
+  adc[nr].setRefp0Refn0AsVrefAndCalibrate(); // Sets
+  // adc[nr].setVRefValue_V(VREFADC); // Sets internal Vref for ADC[i] to const Value
+  float vref = adc[nr].getVRef_V();
+  Serial.print("VREF Set to: ");// Debug: Gives the measured internal Vref for ADC[i]
+  Serial.println(vref,2);
+  adc[nr].setNonBlockingMode(false);
+  adc[nr].setCompareChannels(ADS1220_MUX_0_AVSS); 
+}
+
+void setupADCs(){
   for (int i = 0; i < 4; i++) {
     // setup for each ADC
     setupADC(i);
@@ -361,30 +395,21 @@ void setupADCs() {
   }  
 }
 
-// Setup ADS1220
-void setupADC(int nr) {
-  adc[nr].begin(CS_Pins[nr],DRDY_Pins[nr]);
-  // Set data rate of ADC to 1kHz
-  adc[nr].set_data_rate(DR_1000SPS);
-  // Set internal gain in ADC to 1
-  adc[nr].set_pga_gain(PGA_GAIN_1);
-  // Set Single shot mode
-  adc[nr].set_conv_mode_single_shot();
-  // Set reference voltage to VREF0
-  adc[nr].set_VREF(VREF_REFP0);
-  // Set Mux to Differenital CH0-CH1
-  adc[nr].select_mux_channels(MUX_AIN0_AIN1);   // Measurement mode. Set up once, the mux channel will not be changed during runtime.
-}
-
-// Readout all four ADCs simultaneously -> Faster than waiting for each ADC after another.
+//-------------------------------------------------------------------------------------------------------------------
 void readoutADCs() {
-  // Start ADC measurement
-  for(int i = 0; i < 4; i++){    
-    adc[i].Start_Conv();
-  }
-  // read ADC data
-  for(int i = 0; i < 4; i++){    
-    adc_data[i] = adc[i].Read_WaitForData();
+  // for(int i = 0; i < NUM_ADCS; i++){    
+  //   adc[i].start(); // ADC Ferro
+  // }
+  
+  // for(int i = 0; i < NUM_ADCS; i++){    
+  //   while(digitalRead(DRDY_Pins[i])){
+  //     // do nothing
+  //   }
+    // adc_data[i] = adc[i].getRawData();
+    // adc_data[i] = adc[i].getVoltage_mV();
+  // }
+  for(int i=0; i < NUM_ADCS; i++){
+    adc_data[i] = adc[i].getVoltage_mV();
   }
 }
 
@@ -438,12 +463,21 @@ void sendDataToDisplay() {
 // Conversion to "display graph values"
 // -max to max mapped onto 0 to 255
 // Charge in pC as input value
-// Voltage: max. +/- 1.7V -> max. +/- 612 pC with CF = 360pF
 int convertToDisplay(double value) {
-  // map value relative to maxCharge to the 128 possible values in positive or negative direction
-  double ret = value/maxCharge * 128 + 128;
-  //Serial.print("Display Value: ");
-  //Serial.print(ret);
+  float ret = 128;
+  if(display_charge) {
+    // map value relative to maxCharge to the 128 possible values in positive or negative direction
+    if(value > 0) {
+      ret = value/maxChargePlus * 128 + 128;
+    } else if(value < 0) {
+      ret = 128 - (value/maxChargeMinus * 128);
+    }
+  }
+  else {
+    ret = value/(vRef_mV/1000.0) * 128 + 128;
+  }
+  if(ret > 255) ret = 255;
+  if(ret < 0) ret = 0;
   return (int) ret;
 }
 
