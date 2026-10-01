@@ -103,14 +103,17 @@ ChrisBox was developed at the [Measurement and Sensor Technology Group](https://
 
 ## Citation
 
-If you would like to reference the project, please cite the following (yet to publish...) [paper](https://www.etit.tu-darmstadt.de/must/):
+If you would like to reference the project, please cite DOI: [10.3390/hardware4040020](https://doi.org/10.3390/hardware4040020).
 
 ```
-@article{name2025,
-  author={},
-  booktitle={},
-  title={},
-  year={2025},
-  pages={},
-  doi={}
+@article{hardware4040020,
+  author = {Suppelt, Sven and Werner, Dominik and Altmann, Alexander Anton and Herbst, Felix and Ulmer, Lukas and Dörsam, Jan Helge and Latsch, Bastian and Kupnik, Mario},
+  title = {ChrisBox: An Open-Source 4-Channel Portable Charge Amplifier for Research and Education},
+  journal = {Hardware},
+  year = {2026},
+  volume = {4},
+  number = {4},
+  pages = {20},
+  doi = {10.3390/hardware4040020}
+}
 ```
