@@ -20,7 +20,10 @@ The files are found in `./PCB/jlcpcb`. The gerber-files contain information abou
       <img src="/data/ChrisBox_JLC_2.png" width="49%">
 </p>
 
-In the ordering process, select the option "Order Number(Specify Position)" if you want to specify the position of the order number on your PCB. The silkscreen contains a text "JLCJLCJLCJLC" for this purpose under the shield. More information about this topic can be found here: [JLCPCB article](https://jlcpcb.com/help/article/How-to-remove-order-number-from-your-PCB).
+In the ordering process, select the option "Mark on PCB", "2D Barcode (Serial Number)", "Number Only", and "Specify Position" if you want to place a serial number on your PCB.
+The silkscreen contains a 2x10mm square for this purpose.
+The older order number setting has been superseded.
+More information about this topic can be found in the [JLCPCB instructions on PCB marks](https://jlcpcb.com/help/article/How-to-mark-on-PCB).
 
 <p align="center">
       <img src="/data/ChrisBox_JLC_3.png" width="49%">

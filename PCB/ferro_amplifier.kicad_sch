@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "48165e23-4ba1-496b-9ee8-af09d9969d0a")
 	(paper "A4")
 	(lib_symbols
@@ -81,35 +81,17 @@
 				)
 			)
 			(symbol "AD8605ARTZ_1_1"
-				(pin output line
-					(at 7.62 0 180)
+				(pin input line
+					(at -7.62 2.54 0)
 					(length 2.54)
-					(name "~"
+					(name "-"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -1.27 -6.35 90)
-					(length 3.18)
-					(name "V-"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "2"
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -135,24 +117,6 @@
 						)
 					)
 				)
-				(pin input line
-					(at -7.62 2.54 0)
-					(length 2.54)
-					(name "-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin power_in line
 					(at -1.27 6.35 270)
 					(length 3.18)
@@ -171,7 +135,44 @@
 						)
 					)
 				)
+				(pin power_in line
+					(at -1.27 -6.35 90)
+					(length 3.18)
+					(name "V-"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Analog_ADC:ADS1220xPW"
 			(exclude_from_sim no)
@@ -256,16 +257,34 @@
 			)
 			(symbol "ADS1220xPW_1_1"
 				(pin input line
-					(at 17.78 7.62 180)
+					(at -17.78 7.62 0)
 					(length 2.54)
-					(name "SCLK"
+					(name "REFP0"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "1"
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -17.78 5.08 0)
+					(length 2.54)
+					(name "AIN0/REFP1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -292,178 +311,16 @@
 					)
 				)
 				(pin input line
-					(at -17.78 5.08 0)
+					(at -17.78 -2.54 0)
 					(length 2.54)
-					(name "AIN0/REFP1"
+					(name "AIN2"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 2.54 12.7 270)
-					(length 2.54)
-					(name "AVDD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 12.7 270)
-					(length 2.54)
-					(name "DVDD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 17.78 -5.08 180)
-					(length 2.54)
-					(name "~{DRDY}"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 17.78 2.54 180)
-					(length 2.54)
-					(name "DOUT/~{DRDY}"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "15"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 17.78 5.08 180)
-					(length 2.54)
-					(name "DIN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "16"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 17.78 0 180)
-					(length 2.54)
-					(name "~{CS}"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 17.78 -7.62 180)
-					(length 2.54)
-					(name "CLK"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -12.7 90)
-					(length 2.54)
-					(name "DGND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 2.54 -12.7 90)
-					(length 2.54)
-					(name "AVSS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
+					(number "7"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -490,24 +347,6 @@
 					)
 				)
 				(pin input line
-					(at -17.78 -2.54 0)
-					(length 2.54)
-					(name "AIN2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
 					(at -17.78 -7.62 0)
 					(length 2.54)
 					(name "REFN0"
@@ -525,17 +364,179 @@
 						)
 					)
 				)
-				(pin input line
-					(at -17.78 7.62 0)
+				(pin power_in line
+					(at 0 12.7 270)
 					(length 2.54)
-					(name "REFP0"
+					(name "DVDD"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "9"
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -12.7 90)
+					(length 2.54)
+					(name "DGND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 2.54 12.7 270)
+					(length 2.54)
+					(name "AVDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 2.54 -12.7 90)
+					(length 2.54)
+					(name "AVSS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 17.78 7.62 180)
+					(length 2.54)
+					(name "SCLK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 17.78 5.08 180)
+					(length 2.54)
+					(name "DIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 2.54 180)
+					(length 2.54)
+					(name "DOUT/~{DRDY}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 17.78 0 180)
+					(length 2.54)
+					(name "~{CS}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 -5.08 180)
+					(length 2.54)
+					(name "~{DRDY}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 17.78 -7.62 180)
+					(length 2.54)
+					(name "CLK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -544,10 +545,13 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Connector:TestPoint_2Pole"
 			(pin_names
-				(offset 0.762) hide)
+				(offset 0.762)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -672,9 +676,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:C"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0.254)
 			)
@@ -747,7 +754,7 @@
 			(symbol "C_0_1"
 				(polyline
 					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
+						(xy -2.032 0.762) (xy 2.032 0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -759,7 +766,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -808,9 +815,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:R"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
@@ -929,6 +939,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "TYPE-C-31-M-12:TYPE-C-31-M-12"
 			(pin_names
@@ -1125,42 +1136,6 @@
 						(type background)
 					)
 				)
-				(pin power_in line
-					(at 17.78 -10.16 180)
-					(length 5.08)
-					(name "GND"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "A1_B12"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 17.78 10.16 180)
-					(length 5.08)
-					(name "VBUS"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "A4_B9"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
 				(pin bidirectional line
 					(at -17.78 5.08 0)
 					(length 5.08)
@@ -1234,16 +1209,16 @@
 					)
 				)
 				(pin power_in line
-					(at 17.78 -10.16 180)
+					(at 17.78 10.16 180)
 					(length 5.08)
-					(name "GND"
+					(name "VBUS"
 						(effects
 							(font
 								(size 1.016 1.016)
 							)
 						)
 					)
-					(number "B1_A12"
+					(number "A4_B9"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -1270,34 +1245,16 @@
 					)
 				)
 				(pin bidirectional line
-					(at 17.78 -2.54 180)
+					(at 17.78 5.08 180)
 					(length 5.08)
-					(name "CC2"
+					(name "SBU2"
 						(effects
 							(font
 								(size 1.016 1.016)
 							)
 						)
 					)
-					(number "B5"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 17.78 0 180)
-					(length 5.08)
-					(name "DP2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "B6"
+					(number "B8"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -1324,16 +1281,34 @@
 					)
 				)
 				(pin bidirectional line
-					(at 17.78 5.08 180)
+					(at 17.78 0 180)
 					(length 5.08)
-					(name "SBU2"
+					(name "DP2"
 						(effects
 							(font
 								(size 1.016 1.016)
 							)
 						)
 					)
-					(number "B8"
+					(number "B6"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 17.78 -2.54 180)
+					(length 5.08)
+					(name "CC2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "B5"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -1413,7 +1388,44 @@
 						)
 					)
 				)
+				(pin power_in line
+					(at 17.78 -10.16 180)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "A1_B12"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 17.78 -10.16 180)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "B1_A12"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+3.3V"
 			(power)
@@ -1491,7 +1503,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -1503,7 +1515,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -1517,7 +1529,8 @@
 			(symbol "+3.3V_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "+3.3V"
 						(effects
 							(font
@@ -1534,6 +1547,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+3.3VA"
 			(power)
@@ -1611,7 +1625,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -1623,7 +1637,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -1637,7 +1651,8 @@
 			(symbol "+3.3VA_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "+3.3VA"
 						(effects
 							(font
@@ -1654,6 +1669,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
@@ -1733,7 +1749,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "GND"
 						(effects
 							(font
@@ -1750,7 +1767,152 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(rectangle
+		(start 170.815 48.26)
+		(end 227.965 148.59)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 054f79e6-113e-4886-9d78-e03e522dfcf9)
+	)
+	(rectangle
+		(start 69.215 135.89)
+		(end 169.545 148.59)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 122a5569-4de5-495e-b416-162d8aa5c5b0)
+	)
+	(rectangle
+		(start 69.215 85.09)
+		(end 169.545 134.62)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid a6e210fa-cf63-4505-bc63-fe7fc8b16b52)
+	)
+	(rectangle
+		(start 172.085 53.34)
+		(end 194.945 80.01)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid a6e90cef-cfe7-498d-8a80-2ac4f7e9fbdf)
+	)
+	(rectangle
+		(start 69.215 48.26)
+		(end 169.545 83.82)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid ce5a6b6e-9714-45a7-90bb-f38c9359e312)
+	)
+	(text "0R for disconnecting parts of the circuit."
+		(exclude_from_sim no)
+		(at 200.025 140.97 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "20d7ec93-23ec-4906-ab82-b2380d4a5686")
+	)
+	(text "Pull-Up Circuit für CS"
+		(exclude_from_sim no)
+		(at 172.085 80.01 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3105f738-60fa-41be-ab12-986145b0d427")
+	)
+	(text "CHARGE AMPLIFIER"
+		(exclude_from_sim no)
+		(at 70.612 88.773 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "433fd256-4ccd-4e06-bf9b-331a0bbcdbec")
+	)
+	(text "ADS1220\nDatasheet\n9.1.1 + 9.2.1"
+		(exclude_from_sim no)
+		(at 212.725 86.36 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "642a7293-b64b-475f-a521-e68537c9da87")
+	)
+	(text "ADC"
+		(exclude_from_sim no)
+		(at 172.085 52.07 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "a2885c3a-9304-4e6c-bf11-8d7c0522b0bc")
+	)
+	(text "Local Ferro TEST POINTS"
+		(exclude_from_sim no)
+		(at 71.12 139.7 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "b5a5eae4-e31a-4534-a056-39a263afc484")
+	)
+	(text "FERRO CONNECTOR"
+		(exclude_from_sim no)
+		(at 70.485 52.07 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "bb8b058b-04a6-4955-aeae-6dcd5c16ae68")
 	)
 	(junction
 		(at 179.07 119.38)
@@ -2622,153 +2784,8 @@
 		)
 		(uuid "fd8e6af4-d44b-4afd-b3d9-26129050305b")
 	)
-	(rectangle
-		(start 170.815 48.26)
-		(end 227.965 148.59)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 054f79e6-113e-4886-9d78-e03e522dfcf9)
-	)
-	(rectangle
-		(start 69.215 135.89)
-		(end 169.545 148.59)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 122a5569-4de5-495e-b416-162d8aa5c5b0)
-	)
-	(rectangle
-		(start 69.215 85.09)
-		(end 169.545 134.62)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid a6e210fa-cf63-4505-bc63-fe7fc8b16b52)
-	)
-	(rectangle
-		(start 172.085 53.34)
-		(end 194.945 80.01)
-		(stroke
-			(width 0)
-			(type dash)
-		)
-		(fill
-			(type none)
-		)
-		(uuid a6e90cef-cfe7-498d-8a80-2ac4f7e9fbdf)
-	)
-	(rectangle
-		(start 69.215 48.26)
-		(end 169.545 83.82)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid ce5a6b6e-9714-45a7-90bb-f38c9359e312)
-	)
-	(text "0R for disconnecting parts of the circuit."
-		(exclude_from_sim no)
-		(at 200.025 140.97 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "20d7ec93-23ec-4906-ab82-b2380d4a5686")
-	)
-	(text "Pull-Up Circuit für CS"
-		(exclude_from_sim no)
-		(at 172.085 80.01 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "3105f738-60fa-41be-ab12-986145b0d427")
-	)
-	(text "CHARGE AMPLIFIER"
-		(exclude_from_sim no)
-		(at 70.612 88.773 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "433fd256-4ccd-4e06-bf9b-331a0bbcdbec")
-	)
-	(text "ADS1220\nDatasheet\n9.1.1 + 9.2.1"
-		(exclude_from_sim no)
-		(at 212.725 86.36 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "642a7293-b64b-475f-a521-e68537c9da87")
-	)
-	(text "ADC"
-		(exclude_from_sim no)
-		(at 172.085 52.07 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "a2885c3a-9304-4e6c-bf11-8d7c0522b0bc")
-	)
-	(text "Local Ferro TEST POINTS"
-		(exclude_from_sim no)
-		(at 71.12 139.7 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "b5a5eae4-e31a-4534-a056-39a263afc484")
-	)
-	(text "FERRO CONNECTOR"
-		(exclude_from_sim no)
-		(at 70.485 52.07 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "bb8b058b-04a6-4955-aeae-6dcd5c16ae68")
-	)
 	(label "Vout"
 		(at 128.27 143.51 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2779,7 +2796,6 @@
 	)
 	(label "Ferro"
 		(at 145.415 69.215 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2790,7 +2806,6 @@
 	)
 	(label "Ferro"
 		(at 93.345 66.675 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2801,7 +2816,6 @@
 	)
 	(label "Vout"
 		(at 144.145 114.935 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2812,7 +2826,6 @@
 	)
 	(label "Vout"
 		(at 200.025 137.795 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2823,7 +2836,6 @@
 	)
 	(label "Ferro"
 		(at 93.345 112.395 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3077,7 +3089,6 @@
 	(hierarchical_label "DRDY"
 		(shape input)
 		(at 210.185 72.39 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3089,7 +3100,6 @@
 	(hierarchical_label "CS"
 		(shape input)
 		(at 183.515 55.88 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3101,7 +3111,6 @@
 	(hierarchical_label "CS"
 		(shape input)
 		(at 205.105 72.39 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3171,7 +3180,7 @@
 			(uuid "40204c25-2214-4734-b525-cb1b0255ab91")
 		)
 		(instances
-			(project "Platine 4 Kanal Ferroelektret"
+			(project "ChrisPCB"
 				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
 					(reference "C28")
 					(unit 1)
@@ -3249,7 +3258,7 @@
 			(uuid "a96d7c75-3d83-4137-9dac-0aed86b0a229")
 		)
 		(instances
-			(project "Platine 4 Kanal Ferroelektret"
+			(project "ChrisPCB"
 				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
 					(reference "#PWR050")
 					(unit 1)
@@ -3330,7 +3339,7 @@
 			(uuid "ab247cc1-a0f8-41a9-bf77-6cdf004ce757")
 		)
 		(instances
-			(project "Platine 4 Kanal Ferroelektret"
+			(project "ChrisPCB"
 				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
 					(reference "C17")
 					(unit 1)
@@ -3418,7 +3427,7 @@
 			(uuid "7e128190-ec73-401d-b0db-261a62fc04e2")
 		)
 		(instances
-			(project "Platine 4 Kanal Ferroelektret"
+			(project "ChrisPCB"
 				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
 					(reference "U4")
 					(unit 1)
@@ -3496,7 +3505,7 @@
 			(uuid "1dfb3c58-7996-4040-bff4-673f7d3e4a12")
 		)
 		(instances
-			(project "Platine 4 Kanal Ferroelektret"
+			(project "ChrisPCB"
 				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
 					(reference "#PWR052")
 					(unit 1)
@@ -3574,7 +3583,7 @@
 			(uuid "3d6fb0e3-e1a5-49e1-920e-3d2cd54b583c")
 		)
 		(instances
-			(project "Platine 4 Kanal Ferroelektret"
+			(project "ChrisPCB"
 				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
 					(reference "#PWR044")
 					(unit 1)
@@ -3827,7 +3836,7 @@
 			(uuid "7b290645-65bd-4753-86cb-c5b153ee6a13")
 		)
 		(instances
-			(project "Platine 4 Kanal Ferroelektret"
+			(project "ChrisPCB"
 				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
 					(reference "J7")
 					(unit 1)
@@ -3905,7 +3914,7 @@
 			(uuid "35a082bc-40de-4fee-94fa-4bb69c65f469")
 		)
 		(instances
-			(project "Platine 4 Kanal Ferroelektret"
+			(project "ChrisPCB"
 				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
 					(reference "#PWR047")
 					(unit 1)
@@ -3982,7 +3991,7 @@
 			(uuid "84e71bb4-4f56-42e3-ae74-95ef2f2ce2bc")
 		)
 		(instances
-			(project "Platine 4 Kanal Ferroelektret"
+			(project "ChrisPCB"
 				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
 					(reference "#PWR042")
 					(unit 1)
@@ -4063,7 +4072,7 @@
 			(uuid "92339b15-e0d4-4248-b7fe-18fd39931af5")
 		)
 		(instances
-			(project "Platine 4 Kanal Ferroelektret"
+			(project "ChrisPCB"
 				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
 					(reference "C21")
 					(unit 1)
@@ -4140,7 +4149,7 @@
 			(uuid "7dc75c94-9685-477a-8825-fdc756eebe3d")
 		)
 		(instances
-			(project "Platine 4 Kanal Ferroelektret"
+			(project "ChrisPCB"
 				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
 					(reference "#PWR049")
 					(unit 1)
@@ -4221,7 +4230,7 @@
 			(uuid "84cbe23f-0927-44c8-9558-b698bcf18dce")
 		)
 		(instances
-			(project "Platine 4 Kanal Ferroelektret"
+			(project "ChrisPCB"
 				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
 					(reference "C26")
 					(unit 1)
@@ -4302,7 +4311,7 @@
 			(uuid "749a2d94-2e00-401c-8e21-c8ed90d25d68")
 		)
 		(instances
-			(project "Platine 4 Kanal Ferroelektret"
+			(project "ChrisPCB"
 				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
 					(reference "R13")
 					(unit 1)
@@ -4383,7 +4392,7 @@
 			(uuid "ffcbc363-52aa-49e1-b301-598d0fd6646f")
 		)
 		(instances
-			(project "Platine 4 Kanal Ferroelektret"
+			(project "ChrisPCB"
 				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
 					(reference "C23")
 					(unit 1)
@@ -4460,7 +4469,7 @@
 			(uuid "1f455eea-7120-4456-91ec-eef3ea1f369c")
 		)
 		(instances
-			(project "Platine 4 Kanal Ferroelektret"
+			(project "ChrisPCB"
 				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
 					(reference "#PWR043")
 					(unit 1)
@@ -4541,7 +4550,7 @@
 			(uuid "25ce7e57-8acb-4600-b944-19c374fd112a")
 		)
 		(instances
-			(project "Platine 4 Kanal Ferroelektret"
+			(project "ChrisPCB"
 				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
 					(reference "C18")
 					(unit 1)
@@ -4619,7 +4628,7 @@
 			(uuid "a9d6b663-90b3-4017-b52f-682c4b675364")
 		)
 		(instances
-			(project "Platine 4 Kanal Ferroelektret"
+			(project "ChrisPCB"
 				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
 					(reference "#PWR046")
 					(unit 1)
@@ -4698,7 +4707,7 @@
 			(uuid "c1cfb2f4-06c9-4114-b509-f127cbcd7a99")
 		)
 		(instances
-			(project "Platine 4 Kanal Ferroelektret"
+			(project "ChrisPCB"
 				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
 					(reference "CF1")
 					(unit 1)
@@ -4777,7 +4786,7 @@
 			(uuid "6405962e-fbed-439c-976f-0dff1f0fcbe2")
 		)
 		(instances
-			(project "Platine 4 Kanal Ferroelektret"
+			(project "ChrisPCB"
 				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
 					(reference "#PWR057")
 					(unit 1)
@@ -4858,7 +4867,7 @@
 			(uuid "addc7d7f-0376-41cd-bf94-ef6d01753f1f")
 		)
 		(instances
-			(project "Platine 4 Kanal Ferroelektret"
+			(project "ChrisPCB"
 				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
 					(reference "C25")
 					(unit 1)
@@ -4940,7 +4949,7 @@
 			(uuid "009c1367-a8c0-471f-bf6b-222e4dd6b539")
 		)
 		(instances
-			(project "Platine 4 Kanal Ferroelektret"
+			(project "ChrisPCB"
 				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
 					(reference "TP6")
 					(unit 1)
@@ -5019,7 +5028,7 @@
 			(uuid "3b8ae4e5-3a7e-48a0-8543-71df5834d284")
 		)
 		(instances
-			(project "Platine 4 Kanal Ferroelektret"
+			(project "ChrisPCB"
 				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
 					(reference "C22")
 					(unit 1)
@@ -5100,7 +5109,7 @@
 			(uuid "04098001-615d-4ad8-a00f-3cbb9d01aa76")
 		)
 		(instances
-			(project "Platine 4 Kanal Ferroelektret"
+			(project "ChrisPCB"
 				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
 					(reference "C24")
 					(unit 1)
@@ -5180,7 +5189,7 @@
 			(uuid "42edbebf-9af6-43cf-a349-e9bf833f189d")
 		)
 		(instances
-			(project "Platine 4 Kanal Ferroelektret"
+			(project "ChrisPCB"
 				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
 					(reference "RF1")
 					(unit 1)
@@ -5261,7 +5270,7 @@
 			(uuid "decd9bca-900c-42e0-8d43-bcf8e7a9fc7d")
 		)
 		(instances
-			(project "Platine 4 Kanal Ferroelektret"
+			(project "ChrisPCB"
 				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
 					(reference "C20")
 					(unit 1)
@@ -5342,7 +5351,7 @@
 			(uuid "af90ba77-3b00-4817-937e-a09faae54dd8")
 		)
 		(instances
-			(project "Platine 4 Kanal Ferroelektret"
+			(project "ChrisPCB"
 				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
 					(reference "R15")
 					(unit 1)
@@ -5420,7 +5429,7 @@
 			(uuid "d3a701fb-af8f-4c98-a04f-cf77f2d0e1b9")
 		)
 		(instances
-			(project "Platine 4 Kanal Ferroelektret"
+			(project "ChrisPCB"
 				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
 					(reference "#PWR055")
 					(unit 1)
@@ -5501,7 +5510,7 @@
 			(uuid "583be14e-d8d5-40aa-aa3d-826bd7a86ef7")
 		)
 		(instances
-			(project "Platine 4 Kanal Ferroelektret"
+			(project "ChrisPCB"
 				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
 					(reference "C19")
 					(unit 1)
@@ -5579,7 +5588,7 @@
 			(uuid "0a3ce7b4-1580-4946-8027-637c48839219")
 		)
 		(instances
-			(project "Platine 4 Kanal Ferroelektret"
+			(project "ChrisPCB"
 				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
 					(reference "#PWR041")
 					(unit 1)
@@ -5660,7 +5669,7 @@
 			(uuid "fbf942ae-eca3-46c1-9e85-70e41e93a45e")
 		)
 		(instances
-			(project "Platine 4 Kanal Ferroelektret"
+			(project "ChrisPCB"
 				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
 					(reference "R16")
 					(unit 1)
@@ -5738,7 +5747,7 @@
 			(uuid "4a17f85e-c431-4789-968a-bba9860ac440")
 		)
 		(instances
-			(project "Platine 4 Kanal Ferroelektret"
+			(project "ChrisPCB"
 				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
 					(reference "#PWR051")
 					(unit 1)
@@ -5819,7 +5828,7 @@
 			(uuid "6e8021a5-76e3-4d9f-9e59-664af046d5a0")
 		)
 		(instances
-			(project "Platine 4 Kanal Ferroelektret"
+			(project "ChrisPCB"
 				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
 					(reference "R14")
 					(unit 1)
@@ -5900,7 +5909,7 @@
 			(uuid "b1a9ef8a-f71f-4638-9f76-3e3e43ab4822")
 		)
 		(instances
-			(project "Platine 4 Kanal Ferroelektret"
+			(project "ChrisPCB"
 				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
 					(reference "R12")
 					(unit 1)
@@ -5978,7 +5987,7 @@
 			(uuid "3ec9478b-555a-467c-bf10-1bce91e84757")
 		)
 		(instances
-			(project "Platine 4 Kanal Ferroelektret"
+			(project "ChrisPCB"
 				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
 					(reference "#PWR054")
 					(unit 1)
@@ -6059,7 +6068,7 @@
 			(uuid "96b1cb91-3d28-410d-b137-f27f8987930c")
 		)
 		(instances
-			(project "Platine 4 Kanal Ferroelektret"
+			(project "ChrisPCB"
 				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
 					(reference "R17")
 					(unit 1)
@@ -6137,7 +6146,7 @@
 			(uuid "0383f53b-050d-479d-ad77-2eab46d457cb")
 		)
 		(instances
-			(project "Platine 4 Kanal Ferroelektret"
+			(project "ChrisPCB"
 				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
 					(reference "#PWR053")
 					(unit 1)
@@ -6215,7 +6224,7 @@
 			(uuid "85661b3f-09f8-4e8c-82ef-2008bf845af9")
 		)
 		(instances
-			(project "Platine 4 Kanal Ferroelektret"
+			(project "ChrisPCB"
 				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
 					(reference "#PWR045")
 					(unit 1)
@@ -6292,7 +6301,7 @@
 			(uuid "7b093342-428a-412c-bcd6-eb688033789f")
 		)
 		(instances
-			(project "Platine 4 Kanal Ferroelektret"
+			(project "ChrisPCB"
 				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
 					(reference "#PWR048")
 					(unit 1)
@@ -6370,7 +6379,7 @@
 			(uuid "7282a29b-90c0-44f6-946c-a5a4dc7f62f8")
 		)
 		(instances
-			(project "Platine 4 Kanal Ferroelektret"
+			(project "ChrisPCB"
 				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
 					(reference "#PWR056")
 					(unit 1)
@@ -6492,7 +6501,7 @@
 			(uuid "116af715-a2c8-45f8-897a-b29943479dfb")
 		)
 		(instances
-			(project "Platine 4 Kanal Ferroelektret"
+			(project "ChrisPCB"
 				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
 					(reference "U3")
 					(unit 1)
@@ -6571,7 +6580,7 @@
 			(uuid "704fdfdf-9534-448c-9ef3-739d68eb0dac")
 		)
 		(instances
-			(project "Platine 4 Kanal Ferroelektret"
+			(project "ChrisPCB"
 				(path "/cfcf1b3c-7590-4927-b1bd-54f64899d412/013d7a2b-b901-4399-91d3-2d69f2b1c62b"
 					(reference "C27")
 					(unit 1)
