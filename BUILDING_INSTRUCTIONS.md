@@ -14,8 +14,9 @@ When ordering a populated circuit board (e.g. from JLCPCB), the result should lo
 
 ![Unsoldered version of ChrisBox](/data/ChrisBox_PCB_1_unsoldered.JPG)
 
-This PCB is not finished. The shielding frame cannot be placed at JLCPCB, as well as the very high (G&Omega; range) feedback resistors for the charge amplifiers.
-As a result, these components have to be placed by hand:
+This PCB is not finished.
+The shielding frame and G&Omega; feedback resistors for the charge amplifiers are typically not in stock at JLCPCB.
+If you did not use their Global Sourcing Parts Service, these components are not assembled and have to be placed by hand:
 - Feedback resistors: 4x 0805 (in) or 2012 (mm), 5G&Omega;
 - Shield frame: 1x Laird Technologies, BMI-S-205-F
 - Shield cover: 1x Laird Technologies, BMI-S-205-C
@@ -25,12 +26,13 @@ As a result, these components have to be placed by hand:
 The places for the feedback resistors and the shielding frame are shown in the picture below. The shielding cover does not have to be soldered, it can be placed on the fence afterwards.
 > [!TIP]
 > Things get easier if the resistors are soldered first because of the height of the components.
-> Also it can come handy to remove the cross in the middle of the shielding frame before soldering if some components have to be reached afterwards.
+> Also it can come handy to remove the cross in the middle of the shielding frame before soldering if some components have to be reached afterward.
 
-Unfortunately, fhe frame and connected shielding plane (in the PCB) are good in heat distribution. Therefore it takes a while to heat the pads and solder the frame.
+Unfortunately, the frame and connected shielding plane (in the PCB) are good in heat distribution.
+Therefore it takes a while to heat the pads and solder the frame.
 
-> [!WARNING]  
-> When soldering, try to use as little flux as possible and/or clean the circuit board afterwards. Flux is slightly conductive and distorts the sensor values, which can result in saturation of the ADC inputs! 
+> [!WARNING]
+> When soldering, try to use as little flux as possible and/or clean the circuit board afterward. Flux is slightly conductive and distorts the sensor values, which can result in saturation of the ADC inputs!
 
 ![ChrisBox places of soldering](/data/ChrisBox_PCB_1.1_unsoldered_marked.JPG)
 
